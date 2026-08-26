@@ -30,10 +30,15 @@ G8_WEEKS.push({
       main: [
         "Mini-lecture: a user interface (UI) is everything a user sees/touches — buttons, text, menus, screens.",
         "Introduce the 'Txt Ur Grndkdz' paper prototype activity: a pre-made paper app prototype students will test.",
+        "Frayer Model: in pairs, complete a Frayer Model for 'Usability' — definition, characteristics, an example from the two app screens shown in the warm-up, and a non-example.",
         "In pairs, one student 'uses' the paper prototype (acting as the app) while the other completes a set task using it.",
         "Students record what worked well and what was confusing about the interface."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Frayer Model",
+        note: "'Usability' is an abstract quality students often confuse with 'looks nice' — a Frayer Model grounds it in concrete characteristics and a real example before the testing activity."
+      },
       task: "Complete the paper prototype user test with a partner and record at least 2 specific usability observations.",
       successChecklist: [
         "Can explain what a user interface is in their own words.",

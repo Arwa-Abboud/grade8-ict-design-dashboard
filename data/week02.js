@@ -38,9 +38,14 @@ G8_WEEKS.push({
         "Set up design journals — students will use these throughout the whole Design Process unit to record their thinking.",
         "Introduce a set of user profiles (e.g. different ages, abilities, contexts) and a set of product images/cards.",
         "In pairs or small groups, students match each product to the user profile it best serves, and justify why.",
+        "Frayer Model: as a class, build a Frayer Model for 'Empathy' — definition, characteristics, a real example from today's matching activity, and a non-example (e.g. designing only for yourself without checking).",
         "Whole-class share-out: discuss a few matches and what evidence students used to justify them."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Frayer Model",
+        note: "'Empathy' is the anchor concept for the entire Design Process unit — a class Frayer Model on Day 1 gives students a shared, precise definition to build on every week after."
+      },
       task: "Complete the product-to-user matching activity with a partner, writing a one-sentence justification for each match in your design journal.",
       successChecklist: [
         "Can describe at least one user profile in their own words.",
@@ -56,13 +61,17 @@ G8_WEEKS.push({
       objective: "Critique a product's design using structured feedback and propose one improvement linked to a user's need.",
       warmup: "Quick recap: recall one product-to-user match from last lesson and why it worked.",
       main: [
-        "Introduce the 'I Like / I Wish / I Wonder' feedback protocol as a structured, respectful way to critique a design.",
+        "Introduce the 'I Like / I Wish / I Wonder' feedback protocol as a structured, respectful way to critique a design — pair it with Accountable Talk stems ('I like that...', 'I wish...', 'I wonder if...') so feedback stays specific and kind.",
         "Model the protocol on one product example as a whole class before students try it independently.",
         "In their same pairs/groups from Lesson 1, students apply the protocol to 2-3 more products, recording feedback in their design journals.",
         "Students select one product and propose a specific design improvement that addresses a real user need.",
         "Share out: a few students present their proposed improvement and the user need it addresses."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Accountable Talk",
+        note: "'I Like / I Wish / I Wonder' IS an Accountable Talk protocol — pairing it explicitly with sentence stems keeps critique constructive and sets the pattern for every peer-feedback moment in this unit."
+      },
       task: "Use I Like / I Wish / I Wonder to critique at least 2 products, then write one proposed design change linked to a specific user need.",
       successChecklist: [
         "Used all three parts of the feedback protocol (Like/Wish/Wonder) appropriately.",

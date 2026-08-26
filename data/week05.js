@@ -52,12 +52,16 @@ G8_WEEKS.push({
       ],
       warmup: "Quick share: show your prototype to the person next to you for 30 seconds before we start.",
       main: [
-        "Set up a 'design charrette' — a structured feedback session where groups view and comment on each other's prototypes.",
+        "Set up a 'design charrette' — a structured feedback session where groups view and comment on each other's prototypes, using Accountable Talk stems so feedback is specific ('I noticed...', 'Have you considered...?', 'What would happen if...?').",
         "Groups rotate to view 2-3 other prototypes, leaving structured feedback (What works? What's unclear? What would you change?).",
         "Groups return to their own prototype and read the feedback they received.",
         "Groups write a short design rationale: what they'd change based on the feedback, and why."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Accountable Talk",
+        note: "The design charrette rotation runs on Accountable Talk stems so feedback across multiple groups stays consistent, specific, and respectful rather than a vague 'looks cool.'"
+      },
       task: "Collect feedback from at least 2 other groups and write a design rationale explaining one change you'd make.",
       successChecklist: [
         "Gave specific, useful feedback to at least 2 other groups.",

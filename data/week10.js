@@ -56,11 +56,15 @@ G8_WEEKS.push({
       main: [
         "Teams swap prototypes with another team (acting as test users/stakeholders).",
         "Testers attempt a specific task using the other team's paper prototype, while the design team observes silently.",
-        "Testers give structured feedback: what worked, what was confusing, what they'd change.",
+        "Testers give structured feedback using Accountable Talk stems ('I noticed...', 'I wasn't sure how to...', 'Can you explain why this screen...?') — what worked, what was confusing, what they'd change.",
         "Teams revise their prototype based on the feedback received.",
         "Teams compile their final paper prototype + testing notes for summative submission."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Accountable Talk",
+        note: "Because this feedback feeds directly into a summative grade, Accountable Talk stems keep it constructive and specific rather than a vague thumbs up/down — testers explain their reasoning, not just their reaction."
+      },
       task: "Complete user testing with another team, revise your prototype based on feedback, and submit your final paper prototype + testing notes.",
       successChecklist: [
         "Testing was completed with real observation, not just a quick glance.",

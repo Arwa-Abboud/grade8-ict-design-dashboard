@@ -29,11 +29,16 @@ G8_WEEKS.push({
       warmup: "Ask: 'Why might just guessing what someone needs be risky? What could go wrong?'",
       main: [
         "Introduce sample user interview transcripts (pre-written, realistic).",
+        "3 Reads on the interview transcript: Read 1 — read through once just to understand who this person is and what they're talking about. Read 2 — read again, highlighting/labeling specific needs, barriers, and opportunities. Read 3 — read a third time asking 'what does this person actually need, and why?'",
         "Model highlighting evidence in an interview: what's a stated need vs. a barrier vs. an opportunity?",
         "In pairs, students read a sample interview and highlight/label needs, barriers, and opportunities.",
         "Pairs write 1-2 clear need statements based on the evidence they found."
       ],
       code: null,
+      literacyStrategy: {
+        name: "3 Reads Approach",
+        note: "A real interview transcript is exactly the kind of complex text 3 Reads is built for: Read 1 for the gist, Read 2 to extract needs/barriers/opportunities, Read 3 to reason about why they matter — directly builds the evidence-based need statements this lesson requires."
+      },
       task: "Read a sample interview and write at least 2 need statements, each backed by a specific quote or detail from the interview.",
       successChecklist: [
         "Need statements are specific, not generic.",

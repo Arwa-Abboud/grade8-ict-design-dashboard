@@ -31,9 +31,14 @@ G8_WEEKS.push({
       main: [
         "Introduce UI element cards: button, text input, dropdown, icon, and others, each with its purpose explained.",
         "In pairs, students sort UI element cards by purpose (input, action, navigation, display).",
+        "Frayer Model: pairs pick their trickiest UI element (often 'Dropdown' vs. 'Button') and complete a quick Frayer Model — definition, characteristics, example, non-example.",
         "Students examine their own paper prototype from Week 10 and identify which UI elements they've already used, and which might be missing."
       ],
       code: null,
+      literacyStrategy: {
+        name: "Frayer Model",
+        note: "With 4 new UI-element terms introduced at once, a fast Frayer Model on the one students find trickiest prevents the terms from blurring together before they need to use them precisely."
+      },
       task: "Sort the UI element cards by purpose and identify at least 2 UI elements your own prototype is missing.",
       successChecklist: [
         "Can correctly explain the purpose of at least 4 different UI elements.",

@@ -54,11 +54,16 @@ G8_WEEKS.push({
       warmup: "Quick share: has anyone used an app that's similar to your team's idea?",
       main: [
         "Introduce the app comparison template and research checklist.",
+        "3 Reads applied to each competitor app's description/store listing: Read 1 — what does this app do? Read 2 — what specific features does it have? Read 3 — what's missing, and why might that matter to users?",
         "Teams research 1-2 existing apps similar to their idea (guided, teacher-approved examples if needed).",
         "Teams compare: what does the competitor do well? What's missing that their app could offer?",
         "Teams revise their app's feature list based on what they learned from research."
       ],
       code: null,
+      literacyStrategy: {
+        name: "3 Reads Approach",
+        note: "Reading a competitor's app description/listing three times (what it does, how it's built, what's missing) turns quick browsing into real market research evidence for the feature-list revision."
+      },
       task: "Complete the app comparison template for at least 1 competitor app, then submit a revised feature list for your own app idea.",
       successChecklist: [
         "Comparison identifies real strengths/gaps in the competitor app.",
