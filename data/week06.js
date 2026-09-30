@@ -1,75 +1,110 @@
-// Week 6 — Oct 5 – Oct 9 — The Design Process (Code.org CSD Unit 4, Lesson 5: User Interfaces)
+// Week 6: Oct 5 - Oct 9: The Design Process (Code.org CSD 2026 Unit 4, Lesson 6: Feedback and Testing; Code.org CSD 2026 Unit 4, Lesson 7: Identifying User Needs)
 G8_WEEKS.push({
-  week: 6,
-  dates: "Oct 5 – Oct 9",
-  status: "content",
-  topic: "The Design Process",
-  essentialQuestion: "How can we test an app to make sure it meets a user's needs?",
-  standards: "CS.MS.2.2 — The way that users interact with devices can provide useful information for improving the design.",
-  lessonMapping: "Code.org CSD Unit 4, Lesson 5: User Interfaces",
-  evidenceOutcomes: "CS.MS.2.2 — a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. c. Discuss issues of bias and accessibility in the design of existing technologies.",
-  walt: "We are learning how user interfaces affect usability.",
-  wilf: ["I can identify strengths and weaknesses in a paper prototype interface."],
-  keyConcepts: ["User interface", "Usability", "Paper prototype", "User testing"],
-  crossCurricular: "Art/Design: layout; English: technical description.",
-  resources: "Code.org Lesson 5; 'Txt Ur Grndkdz' paper prototype activity; design journals",
-  formative: "Usability notes checked for specific interface evidence (Lesson 2)",
-  summative: null,
-  lessons: [
+  "week": 6,
+  "dates": "Oct 5 – Oct 9",
+  "status": "content",
+  "topic": "The Design Process",
+  "essentialQuestion": "How can we use feedback and interviews to understand what users need?",
+  "standards": "CS.MS.2.2, CS.MS.3.1: CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback.",
+  "lessonMapping": "Code.org CSD 2026 Unit 4, Lesson 6: Feedback and Testing; Code.org CSD 2026 Unit 4, Lesson 7: Identifying User Needs",
+  "evidenceOutcomes": "CS.MS.2.2: a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. CS.MS.3.1: c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs.",
+  "walt": "We are learning to use feedback and user interviews to decide what to improve and what to build.",
+  "wilf": [
+    "I can categorize and prioritize user feedback.",
+    "I can identify a user's needs from interview evidence."
+  ],
+  "keyConcepts": [
+    "Feedback",
+    "Prioritization",
+    "User needs",
+    "Interviews",
+    "Barriers and opportunities"
+  ],
+  "crossCurricular": "English: reading for evidence and categorizing; Design: UI critique.",
+  "resources": "Code.org activities: Lesson 6: Prototype Feedback, Improve a Screen; Lesson 7: User Interviews; Code.org lesson slides",
+  "formative": "Improved screen linked to feedback, and need statements from interviews (Lesson 2)",
+  "summative": null,
+  "lessons": [
     {
-      number: 1,
-      title: "What Makes a Good User Interface?",
-      duration: "~50-60 min",
-      objective: "Identify the parts of a user interface and explain what makes one easy or hard to use.",
-      vocabulary: [
-        { term: "User Interface", definition: "The screens, buttons, and controls a person actually sees and touches to use an app." },
-        { term: "Usability", definition: "How easy and pleasant something is to actually use." },
-        { term: "Navigation", definition: "How a user moves between different screens or sections of an app." }
+      "number": 1,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 6: Feedback and Testing",
+      "objective": "Categorize and prioritize user feedback, then improve a screen design based on it.",
+      "vocabulary": [
+        {
+          "term": "Feedback",
+          "definition": "Specific, useful comments from someone else about how well something is working."
+        },
+        {
+          "term": "Prioritize",
+          "definition": "Deciding what to work on first based on what matters most."
+        }
       ],
-      warmup: "Show two versions of the same simple app screen — one cluttered, one clean. 'Which is easier to use, and why?'",
-      main: [
-        "Mini-lecture: a user interface (UI) is everything a user sees/touches — buttons, text, menus, screens.",
-        "Introduce the 'Txt Ur Grndkdz' paper prototype activity: a pre-made paper app prototype students will test.",
-        "Frayer Model: in pairs, complete a Frayer Model for 'Usability' — definition, characteristics, an example from the two app screens shown in the warm-up, and a non-example.",
-        "In pairs, one student 'uses' the paper prototype (acting as the app) while the other completes a set task using it.",
-        "Students record what worked well and what was confusing about the interface."
+      "warmup": "Journal: think of an app that was hard to use. What exactly didn't you like, and how could it be improved?",
+      "main": [
+        "Groups of 2-3 receive the Prototype Feedback slips for the Txt Ur Grndkdz app from Lesson 5.",
+        "Sort the slips into categories of similar needs or problems, and justify each category.",
+        "Choose the most important category and propose improvements clearly linked to it.",
+        "Redesign one screen on the Improve a Screen activity guide to meet that need."
       ],
-      code: null,
-      literacyStrategy: {
-        name: "Frayer Model",
-        note: "'Usability' is an abstract quality students often confuse with 'looks nice' — a Frayer Model grounds it in concrete characteristics and a real example before the testing activity."
+      "literacyStrategy": {
+        "name": "Accountable Talk",
+        "note": "Groups justify categories and priorities with stems: 'We grouped these because...', 'This matters most because...'."
       },
-      task: "Complete the paper prototype user test with a partner and record at least 2 specific usability observations.",
-      successChecklist: [
-        "Can explain what a user interface is in their own words.",
-        "Usability notes are specific (not just 'good' or 'bad')."
+      "task": "Code.org activity (Prototype Feedback + Improve a Screen): Categorize the feedback and redesign one screen that responds to your top category.",
+      "successChecklist": [
+        "Feedback is sorted into clear, labeled categories.",
+        "The improved screen clearly responds to one category of feedback."
       ],
-      exitTicket: "'Name one part of the interface that was confusing, and why.'",
-      notes: null
+      "exitTicket": "'Which piece of feedback did your group decide NOT to act on, and why?'",
+      "codeOrgActivities": [
+        "Prototype Feedback",
+        "Improve a Screen"
+      ]
     },
     {
-      number: 2,
-      title: "Suggesting UI Improvements",
-      duration: "~50-60 min",
-      objective: "Propose specific interface changes based on usability testing evidence.",
-      vocabulary: [
-        { term: "Screen", definition: "One individual view or page within an app." }
+      "number": 2,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 7: Identifying User Needs",
+      "objective": "Analyze interview notes to identify specific user needs.",
+      "vocabulary": [
+        {
+          "term": "Interview",
+          "definition": "Asking someone questions directly to learn about their needs, habits, or opinions."
+        },
+        {
+          "term": "Barrier",
+          "definition": "Something that gets in the way of a user doing what they need to do."
+        },
+        {
+          "term": "Opportunity",
+          "definition": "A chance to solve a problem or make something better for a user."
+        }
       ],
-      warmup: "Quick recall: what was one confusing part of the paper prototype you tested yesterday?",
-      main: [
-        "Review usability notes from Lesson 1 in pairs.",
-        "Discuss as a class: what patterns showed up across different pairs' feedback?",
-        "Students sketch a redesigned version of one confusing screen, addressing the issue they identified.",
-        "Pairs swap redesigns and give quick feedback: does the change actually fix the confusion?"
+      "warmup": "Journal: how can you find out what someone really needs, if they don't tell you directly?",
+      "main": [
+        "Read the user interview notes and highlight evidence of needs and interests.",
+        "Identify the barriers each user faces and the opportunities to help them.",
+        "In groups, share barriers and opportunities and brainstorm app ideas for each user.",
+        "Each student chooses one user and one app idea to develop in the next lesson."
       ],
-      code: null,
-      task: "Redesign one screen from the paper prototype to fix a usability issue you identified, with a brief explanation of the change.",
-      successChecklist: [
-        "Redesign directly addresses a specific usability issue found during testing.",
-        "Can explain why the new version is easier to use."
+      "literacyStrategy": {
+        "name": "3 Reads Approach",
+        "note": "Read the interview three times: for the story, for needs, then for barriers and opportunities."
+      },
+      "task": "Code.org activity (User Interviews): Write need statements backed by interview evidence and choose one app idea for your user.",
+      "successChecklist": [
+        "Each need is backed by a quote or detail from the interview.",
+        "The app idea clearly addresses one identified need."
       ],
-      exitTicket: "Formal Week 6 formative check: submit usability notes + redesigned screen via Toddle.",
-      notes: "Extension: students redesign a screen with accessibility improvements in mind (contrast, text size, labels). This week prepares students for the app prototyping project starting after the break."
+      "exitTicket": "Formal Week 6 formative check: submit your improved screen and need statements via Toddle.",
+      "codeOrgActivities": [
+        "User Interviews"
+      ]
     }
   ]
 });

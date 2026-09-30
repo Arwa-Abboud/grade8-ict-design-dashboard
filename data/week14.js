@@ -1,85 +1,92 @@
-// Week 14 — Nov 30 – Dec 4 — The Design Process (Code.org CSD Unit 4, Lessons 15-21: Build Digital Prototype, Events,
-// Linking Screens, Testing, Bugs and Features, Updating Prototype, App Presentation)
-// COMPRESSED FINAL WEEK: with Week 7 = break and Week 15 = exams, the Colorado curriculum's final two
-// content-weeks (13 total content weeks for only 12 available calendar slots) are combined here — both
-// are continuous parts of the same final build/test/present arc, so nothing new is being added, just
-// compressed into the last week before exams. Flag to Arwa: confirm exact dates once the school's Term 1
-// exam-week placement is finalized.
+// Week 14: Nov 30 - Dec 4: The Design Process (Code.org CSD 2026 Unit 4, Lesson 20: Updating Your Prototype; Code.org CSD 2026 Unit 4, Lesson 21: Project - App Presentation (condensed to a one-class showcase))
 G8_WEEKS.push({
-  week: 14,
-  dates: "Nov 30 – Dec 4",
-  status: "content",
-  topic: "The Design Process",
-  essentialQuestion: "How can events create navigation in an app prototype, and how do we present a full design process, not just the final app?",
-  standards: "CS.MS.3.1, CS.MS.3.3, CS.MS.2.2 — CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems. CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design.",
-  lessonMapping: "Code.org CSD Unit 4, Lessons 15-17: Build Digital Prototype, Events, Linking Screens; Lessons 18-21: Testing, Bugs and Features, Updating Prototype, App Presentation",
-  evidenceOutcomes: "CS.MS.3.1 — b. Document programs in order to make them easier to follow, test, and debug. c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. d. Distribute tasks and maintain a project timeline. CS.MS.3.3 — a. Design and iteratively develop programs that combine control structures. c. Systematically test and refine programs using a range of test cases. CS.MS.2.2 — a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. c. Discuss issues of bias and accessibility in the design of existing technologies.",
-  walt: "We are learning to use events and linked screens to build an interactive prototype, then test, refine, and present it.",
-  wilf: [
-    "I can build screens and use events to move between them.",
-    "I can explain my team's design process, feedback, bugs/features, and final improvements."
+  "week": 14,
+  "dates": "Nov 30 – Dec 4",
+  "status": "content",
+  "topic": "The Design Process",
+  "essentialQuestion": "How do we improve an app and share the design process behind it?",
+  "standards": "CS.MS.3.1, CS.MS.3.3, CS.MS.2.2: CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems. CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design.",
+  "lessonMapping": "Code.org CSD 2026 Unit 4, Lesson 20: Updating Your Prototype; Code.org CSD 2026 Unit 4, Lesson 21: Project - App Presentation (condensed to a one-class showcase)",
+  "evidenceOutcomes": "CS.MS.3.1: b. Document programs in order to make them easier to follow, test, and debug. c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. d. Distribute tasks and maintain a project timeline. CS.MS.3.3: a. Design and iteratively develop programs that combine control structures. c. Systematically test and refine programs using a range of test cases. CS.MS.2.2: a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. c. Discuss issues of bias and accessibility in the design of existing technologies.",
+  "walt": "We are learning to update our app from feedback and present our design journey.",
+  "wilf": [
+    "I can track progress while making changes to my app.",
+    "I can explain our design process clearly to an audience."
   ],
-  keyConcepts: ["Event-driven programming", "Screen linking", "Debugging", "Bug/feature prioritization", "Presentation"],
-  crossCurricular: "Math/Logic: condition-action thinking; English: user instructions and oral presentation; Design: portfolio.",
-  resources: "Code.org Lessons 15-21; App Lab; team task board; presentation template; peer review guide",
-  formative: null,
-  summative: "App Presentation — final Design Process project checkpoint (design process, feedback, bugs/features, improvements, and reflection)",
-  lessons: [
+  "keyConcepts": [
+    "Iterating",
+    "Progress tracking",
+    "Presentation",
+    "Reflection"
+  ],
+  "crossCurricular": "English: oral presentation; Design: portfolio.",
+  "resources": "Code.org activities: Lesson 20: Updating Your Prototype; Lesson 21: App Presentation Template, App Presentation - Student Checklist; Code.org lesson slides",
+  "formative": null,
+  "summative": null,
+  "lessons": [
     {
-      number: 1,
-      title: "Building, Linking & Debugging Your App",
-      duration: "~50-60 min",
-      objective: "Build the remaining screens of your app and use events to link them into a working, navigable prototype.",
-      vocabulary: [
-        { term: "Event", definition: "Something that happens when a user does an action — like tapping a button — that tells the app to do something in response." },
-        { term: "Link (Screens)", definition: "Connecting one screen to another so tapping something on one screen takes the user to the next." },
-        { term: "Debug", definition: "Finding and fixing something that isn't working correctly in your app." }
+      "number": 1,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 20: Updating Your Prototype",
+      "objective": "Update the app based on prioritized feedback while tracking progress.",
+      "vocabulary": [],
+      "warmup": "Journal: which change from yesterday's list will help your user the most?",
+      "main": [
+        "Teams decide how they will make and combine updates.",
+        "Set up a 'To Do / Doing / Done' chart with the priority items.",
+        "Work on the updates, moving items across the chart.",
+        "Recombine into a single app if needed and check every link still works."
       ],
-      warmup: "Teams pull up their App Lab project from last week — what screens exist so far?",
-      main: [
-        "Teacher demo: using onEvent blocks to make a button navigate to another screen.",
-        "Teams finish building any remaining screens from their tested paper prototype.",
-        "Teams add navigation events to link all their screens together.",
-        "Teams test their own app: click through every screen to check the navigation actually works, fixing (debugging) any broken links.",
-        "Keep a running 'bugs/features' list of anything not yet finished or working — this feeds directly into tomorrow's lesson."
+      "task": "Code.org activity (Updating Your Prototype): Make your top-priority updates and track them on the chart.",
+      "successChecklist": [
+        "At least one priority item is Done.",
+        "The app still works after the changes."
       ],
-      code: null,
-      task: "Build and link all your app's screens with working navigation events, and keep a running bugs/features list of what's left to fix or add.",
-      successChecklist: [
-        "All planned screens exist in App Lab.",
-        "Navigation between screens works when tested.",
-        "Bugs/features list is specific enough to act on tomorrow."
-      ],
-      exitTicket: "'What's the top item on your bugs/features list going into tomorrow?'",
-      notes: "This is a build-heavy work session — expect to circulate constantly for App Lab troubleshooting and pair programming support."
+      "exitTicket": "'Show one item you moved to Done and what changed.'",
+      "codeOrgActivities": [
+        "Updating Your Prototype"
+      ]
     },
     {
-      number: 2,
-      title: "Final Testing, Fixes & App Presentation",
-      duration: "~50-60 min",
-      objective: "Test your app, prioritize and fix remaining issues, then present your full design process to the class.",
-      vocabulary: [
-        { term: "Bug", definition: "Something in your app that doesn't work the way it's supposed to." },
-        { term: "Feature", definition: "Something your app does or offers — a planned capability, whether finished yet or not." },
-        { term: "Presentation", definition: "Sharing your work and explaining your process and decisions to an audience." },
-        { term: "Reflection", definition: "Thinking back on what you did, what worked, what didn't, and what you'd do differently." }
+      "number": 2,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": "Code.org plans three days of presentations. Condensed to a one-class showcase; not the graded summative (the summative was collected in Weeks 11-13).",
+      "title": "Lesson 21: App Showcase",
+      "objective": "Present the app and the design process behind it, and reflect on the project.",
+      "vocabulary": [
+        {
+          "term": "Presentation",
+          "definition": "Sharing your work and explaining your process and decisions to an audience."
+        },
+        {
+          "term": "Reflection",
+          "definition": "Thinking back on what you did, what worked, what didn't, and what you'd do differently."
+        }
       ],
-      warmup: "Teams review their bugs/features list from yesterday and pick their top priorities for today.",
-      main: [
-        "Teams run a final round of testing on their app, working through their bugs/features list by priority.",
-        "Teams make final updates/fixes where time allows.",
-        "Introduce the presentation format: purpose/user need, design process journey, feedback received, bugs/features, final app demo, and one honest reflection.",
-        "Teams prepare their presentation using the provided template and assigned roles.",
-        "Teams present their app and design process to the class (or in small groups, depending on time)."
+      "warmup": "Teams take 5 minutes to rehearse who says what.",
+      "main": [
+        "Each team gives a short showcase: user, problem, demo, one change made from testing.",
+        "The audience asks one question per team.",
+        "Individual written reflection on the project.",
+        "Celebrate the finished apps."
       ],
-      code: null,
-      task: "Finish testing/fixing your app, then present your full design process — not just the final app — using the presentation template.",
-      successChecklist: [
-        "Presentation covers the full design journey: user need, process, feedback, and final app.",
-        "Includes an honest reflection on what worked and what could be improved."
+      "literacyStrategy": {
+        "name": "Accountable Talk",
+        "note": "Audience questions use stems: 'How did you decide...?', 'What would you change if...?'."
+      },
+      "task": "Code.org activity (App Presentation Template + App Presentation - Student Checklist): Present your app in a short team showcase and complete your reflection.",
+      "successChecklist": [
+        "The showcase explains the user, the problem and one improvement from testing.",
+        "The reflection names a real strength and an area to improve."
       ],
-      exitTicket: "Summative submission: App Presentation (design process, feedback, bugs/features, improvements, reflection). See the Rubrics tab for scoring criteria.",
-      notes: "This closes out the Design Process unit before exams. If time is tight, presentations can run in small groups simultaneously rather than one at a time to the whole class."
+      "exitTicket": "'What is one thing you would do differently in your next design project?'",
+      "codeOrgActivities": [
+        "App Presentation Template",
+        "App Presentation - Student Checklist"
+      ]
     }
   ]
 });

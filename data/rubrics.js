@@ -3,8 +3,8 @@
 // Kept intentionally simple per Arwa's instruction; easy to edit/expand later.
 var RUBRICS = {
   summative: {
-    title: "App Presentation — Design Process Final Project",
-    subtitle: "Summative Checkpoint — Week 14 — 100 points — closes out the Design Process unit",
+    title: "Digital App Prototype: Design Process Summative",
+    subtitle: "Summative: evidence and rubric scores collected in Weeks 11-13 (Code.org Lessons 14-19). 100 points. The Week 14 App Showcase is not graded.",
     points: 100,
     categories: [
       {
@@ -48,13 +48,13 @@ var RUBRICS = {
         ]
       },
       {
-        name: "Presentation Delivery",
+        name: "Collaboration & Progress",
         points: 15,
         levels: [
-          { label: "Exceeds Expectations", range: "14-15", description: "Presents clearly and confidently, covering every part of the required format within time." },
-          { label: "Meets Expectations", range: "11-13", description: "Presents clearly with most required parts covered." },
-          { label: "Approaching Expectations", range: "7-10", description: "Presentation is unclear, disorganized, or missing key parts." },
-          { label: "Beginning", range: "0-6", description: "Presentation is missing or does not communicate the project." }
+          { label: "Exceeds Expectations", range: "14-15", description: "Took on a clear role, built their assigned screens on time, and helped the team combine and link them." },
+          { label: "Meets Expectations", range: "11-13", description: "Completed their assigned screens and contributed to combining the app, with minor delays." },
+          { label: "Approaching Expectations", range: "7-10", description: "Completed some assigned work but relied heavily on teammates." },
+          { label: "Beginning", range: "0-6", description: "Little evidence of contribution to the team app." }
         ]
       },
       {
@@ -70,17 +70,6 @@ var RUBRICS = {
     ]
   },
   formatives: [
-    {
-      week: "10",
-      title: "Paper Prototype & Testing Notes",
-      points: 20,
-      categories: [
-        { name: "Prototype completeness", points: 5, description: "Includes all key screens needed for the app idea to make sense." },
-        { name: "Addresses user need", points: 5, description: "Prototype is clearly designed around a real, identified user need." },
-        { name: "User testing quality", points: 5, description: "Real testing was conducted with a genuine tester/observer, and notes are specific." },
-        { name: "Revision based on feedback", points: 5, description: "At least one visible, meaningful revision was made after testing." }
-      ]
-    },
     {
       week: "3",
       title: "User Profile Evidence & Design Improvement",
@@ -101,65 +90,49 @@ var RUBRICS = {
     },
     {
       week: "5",
-      title: "Prototype & Reflection",
+      title: "Paper Prototype User Test Notes",
       points: 10,
       categories: [
-        { name: "Prototype effort", points: 5, description: "A genuine attempt to address the chosen need, not just decoration." },
-        { name: "Reflection quality", points: 5, description: "Design rationale clearly explains a change and links it to feedback/user need." }
+        { name: "Specific observations", points: 5, description: "Notes describe what the user actually did or said, linked to a screen." },
+        { name: "Improvement suggestion", points: 5, description: "Suggested change is backed by an observation from the test." }
       ]
     },
     {
       week: "6",
-      title: "Usability Notes & Redesign",
+      title: "Improved Screen & User Needs",
       points: 10,
       categories: [
-        { name: "Usability observations", points: 5, description: "Notes are specific and evidence-based, not just 'good' or 'bad'." },
-        { name: "Redesign quality", points: 5, description: "Redesign clearly fixes the specific issue identified during testing." }
+        { name: "Feedback categories and improved screen", points: 5, description: "Feedback is sorted into clear categories and the improved screen responds to one of them." },
+        { name: "Need statements", points: 5, description: "Need statements are backed by specific evidence from the user interview." }
       ]
     },
     {
       week: "8",
-      title: "Feedback Categories & Improvement",
-      points: 10,
+      title: "Paper Prototype & Testing Notes",
+      points: 20,
       categories: [
-        { name: "Categorization", points: 5, description: "Feedback is sorted into logical, clearly labeled categories." },
-        { name: "Improvement justification", points: 5, description: "Chosen improvement is clearly linked to specific feedback received." }
+        { name: "Prototype completeness", points: 5, description: "Includes all key screens needed for the app idea to make sense." },
+        { name: "Addresses user need", points: 5, description: "Prototype is clearly designed around a real, identified user need." },
+        { name: "User testing quality", points: 5, description: "Real testing was conducted with a genuine tester/observer, and notes are specific." },
+        { name: "Revision based on feedback", points: 5, description: "At least one visible, meaningful revision was made after testing." }
       ]
     },
     {
       week: "9",
-      title: "App Idea & User Need",
+      title: "Market Research & UI Elements",
       points: 10,
       categories: [
-        { name: "Need statement evidence", points: 5, description: "Need statements are backed by specific evidence from the interview text." },
-        { name: "App idea relevance", points: 5, description: "App idea is clearly and directly linked to the identified need." }
+        { name: "Research quality", points: 5, description: "Evaluation identifies real strengths and gaps in similar apps." },
+        { name: "UI element choices", points: 5, description: "Chosen UI elements suit their purpose and can be built in App Lab." }
       ]
     },
     {
-      week: "11",
-      title: "Market Research & Feature List",
+      week: "10",
+      title: "Team Paper Prototype & Test Summary",
       points: 10,
       categories: [
-        { name: "Research quality", points: 5, description: "Comparison identifies real strengths/gaps in a competitor app." },
-        { name: "Feature list revision", points: 5, description: "Revised feature list shows clear evidence of learning from research." }
-      ]
-    },
-    {
-      week: "12",
-      title: "UI Elements & Annotations",
-      points: 10,
-      categories: [
-        { name: "Appropriate UI element use", points: 5, description: "Added elements are appropriate for their purpose, not just decoration." },
-        { name: "Annotation clarity", points: 5, description: "Annotations clearly explain each element's role." }
-      ]
-    },
-    {
-      week: "13",
-      title: "Test Summary & Digital Screens",
-      points: 10,
-      categories: [
-        { name: "Test summary clarity", points: 5, description: "Test summary clearly identifies priority changes for the digital version." },
-        { name: "Digital screen progress", points: 5, description: "At least one screen exists in App Lab reflecting testing feedback." }
+        { name: "Complete user flow", points: 5, description: "Team prototype shows every screen and where each button leads." },
+        { name: "Test summary", points: 5, description: "Priority changes are backed by what users did or said during testing." }
       ]
     }
   ]

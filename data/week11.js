@@ -1,76 +1,93 @@
-// Week 11 — Nov 9 – Nov 13 — The Design Process (Code.org CSD Unit 4, Lessons 9-10: Designing Apps for Good; Market Research)
+// Week 11: Nov 9 - Nov 13: The Design Process (Code.org CSD 2026 Unit 4, Lesson 14: Design Mode in App Lab; Code.org CSD 2026 Unit 4, Lesson 15: Build a Digital Prototype)
 G8_WEEKS.push({
-  week: 11,
-  dates: "Nov 9 – Nov 13",
-  status: "content",
-  topic: "The Design Process",
-  essentialQuestion: "How do designers make sure an app idea is useful and responsible?",
-  standards: "CS.MS.2.2, CS.MS.3.1, CS.MS.6.1 — CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback. CS.MS.6.1: Users can employ specific strategies to mitigate the risks associated with online interactions.",
-  lessonMapping: "Code.org CSD Unit 4, Lesson 9: Designing Apps for Good; Lesson 10: Market Research",
-  evidenceOutcomes: "CS.MS.2.2 — a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. c. Discuss issues of bias and accessibility in the design of existing technologies. CS.MS.3.1 — c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. e. Collaborate with many contributors through strategies such as crowdsourcing or surveys. CS.MS.6.1 — h. Explain why information about them and their behaviors is valuable to companies.",
-  walt: "We are learning to connect app ideas to real-world needs and market research.",
-  wilf: ["I can research similar apps and explain how my app will serve users responsibly."],
-  keyConcepts: ["Apps for good", "Market research", "Competitive analysis", "Ethical design"],
-  crossCurricular: "Social studies: community impact; English: source evaluation.",
-  resources: "Code.org Lessons 9-10; research checklist; app comparison template",
-  formative: "Research notes and revised app feature list (Lesson 2)",
-  summative: null,
-  lessons: [
+  "week": 11,
+  "dates": "Nov 9 – Nov 13",
+  "status": "content",
+  "topic": "The Design Process",
+  "essentialQuestion": "How do we turn a paper prototype into a digital one?",
+  "standards": "CS.MS.2.2, CS.MS.3.1: CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback.",
+  "lessonMapping": "Code.org CSD 2026 Unit 4, Lesson 14: Design Mode in App Lab; Code.org CSD 2026 Unit 4, Lesson 15: Build a Digital Prototype",
+  "evidenceOutcomes": "CS.MS.2.2: a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. CS.MS.3.1: c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs.",
+  "walt": "We are learning to build app screens in App Lab Design Mode from our paper prototype.",
+  "wilf": [
+    "I can choose the right input element for each type of information.",
+    "I can build a digital version of a paper prototype screen."
+  ],
+  "keyConcepts": [
+    "App Lab",
+    "Design Mode",
+    "Digital prototype",
+    "Team roles"
+  ],
+  "crossCurricular": "Art/Design: digital layout; SEL: shared responsibility.",
+  "resources": "Code.org activities: Lesson 14: Intro to Design Mode, Screen Ownership; Lesson 15: Screen Design; Code.org lesson slides",
+  "formative": null,
+  "summative": "Digital App Prototype: summative evidence collection begins (Weeks 11-13)",
+  "lessons": [
     {
-      number: 1,
-      title: "Lesson 9 — Designing Apps for Good",
-      duration: "~50-60 min",
-      objective: "Explore examples of 'apps for good' and connect the concept to your team's own app idea.",
-      vocabulary: [
-        { term: "Apps for Good", definition: "Apps designed specifically to help solve a real problem for people or communities, not just for entertainment or profit." },
-        { term: "Responsible", definition: "Making design choices that consider the wellbeing and rights of the people who will use your product." }
+      "number": 1,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": "Summative evidence collection begins: note each student's roles and progress on the rubric.",
+      "title": "Lesson 14: Design Mode in App Lab",
+      "objective": "Use Design Mode in App Lab and assign team roles for building the digital prototype.",
+      "vocabulary": [
+        {
+          "term": "App Lab",
+          "definition": "The Code.org tool used to build real, working apps."
+        },
+        {
+          "term": "Design Mode",
+          "definition": "The part of App Lab where you build an app's screens by dragging and dropping UI elements, before adding code."
+        }
       ],
-      warmup: "Show 2-3 real examples of 'apps for good' (e.g. accessibility apps, community safety apps). 'What problem is each one solving?'",
-      main: [
-        "Discuss what makes an app 'for good' — solving a real problem responsibly, not just being popular or making money.",
-        "Teams revisit their app idea from Week 9-10 and discuss: what real-world need does it serve?",
-        "Teams write a short 'purpose statement' for their app: who it's for, and what problem it solves.",
-        "Discuss as a class: what responsibilities come with building an app that handles real user needs (privacy, honesty, safety)?"
+      "warmup": "Journal: which screen from your paper prototype will be the easiest to build digitally, and which the hardest?",
+      "main": [
+        "Introduce App Lab and the Design Mode workspace.",
+        "Students work through the online skill-building levels to build an example screen.",
+        "Choose the right input element for each kind of information (text, choice, number).",
+        "Teams assign which paper prototype screens each member will build."
       ],
-      code: null,
-      task: "Write a purpose statement for your app idea, explaining who it's for and what real problem it solves.",
-      successChecklist: [
-        "Purpose statement names a specific user group and a specific problem.",
-        "Can explain at least one responsibility that comes with their app idea."
+      "task": "Code.org activity (Intro to Design Mode + Screen Ownership): Complete the Design Mode levels and agree who builds which screen.",
+      "successChecklist": [
+        "Can add, move and style elements in Design Mode.",
+        "Each team member has screens assigned."
       ],
-      exitTicket: "'What's one way your app idea could accidentally cause a problem if you're not careful?'",
-      notes: "Reminder: students must not collect any real personal data from real users at any point without explicit permission."
+      "exitTicket": "'Which input element will your first screen need, and why?'",
+      "codeOrgActivities": [
+        "Intro to Design Mode",
+        "Screen Ownership"
+      ]
     },
     {
-      number: 2,
-      title: "Lesson 10 — Market Research",
-      duration: "~50-60 min",
-      objective: "Research existing similar apps and use findings to refine your app's purpose and features.",
-      vocabulary: [
-        { term: "Market Research", definition: "Looking at what already exists to understand what works, what's missing, and how your idea could be different or better." },
-        { term: "Competitor", definition: "An existing app or product that solves a similar problem to yours." },
-        { term: "Ethical", definition: "Doing what's right and fair, especially when it comes to how you treat users and their information." }
+      "number": 2,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": "Summative evidence: screenshot each student's screens for the rubric.",
+      "title": "Lesson 15: Build a Digital Prototype",
+      "objective": "Create a digital prototype of an app screen based on the paper prototype.",
+      "vocabulary": [
+        {
+          "term": "Digital Prototype",
+          "definition": "A working on-screen version of an app, built after the paper prototype."
+        }
       ],
-      warmup: "Quick share: has anyone used an app that's similar to your team's idea?",
-      main: [
-        "Introduce the app comparison template and research checklist.",
-        "3 Reads applied to each competitor app's description/store listing: Read 1 — what does this app do? Read 2 — what specific features does it have? Read 3 — what's missing, and why might that matter to users?",
-        "Teams research 1-2 existing apps similar to their idea (guided, teacher-approved examples if needed).",
-        "Teams compare: what does the competitor do well? What's missing that their app could offer?",
-        "Teams revise their app's feature list based on what they learned from research."
+      "warmup": "Team check-in: what did we agree to build, and what does each person need?",
+      "main": [
+        "Plan your screen design from the paper prototype.",
+        "Build your screens in App Lab Design Mode.",
+        "Share designs with the team and check they look consistent.",
+        "Journal: what changed between the paper and digital version, and why?"
       ],
-      code: null,
-      literacyStrategy: {
-        name: "3 Reads Approach",
-        note: "Reading a competitor's app description/listing three times (what it does, how it's built, what's missing) turns quick browsing into real market research evidence for the feature-list revision."
-      },
-      task: "Complete the app comparison template for at least 1 competitor app, then submit a revised feature list for your own app idea.",
-      successChecklist: [
-        "Comparison identifies real strengths/gaps in the competitor app.",
-        "Revised feature list shows evidence of learning from the research."
+      "task": "Code.org activity (Screen Design): Build your assigned screens in App Lab so they match your team's paper prototype.",
+      "successChecklist": [
+        "Your screens match the paper design, with any changes explained.",
+        "Element IDs are clear and named sensibly."
       ],
-      exitTicket: "Formal Week 11 formative check: submit research notes + revised app feature list via Toddle.",
-      notes: "Extension: students complete a SWOT-style comparison (Strengths/Weaknesses/Opportunities/Threats) of existing solutions."
+      "exitTicket": "'Show one screen you built and explain one design choice.'",
+      "codeOrgActivities": [
+        "Screen Design"
+      ]
     }
   ]
 });

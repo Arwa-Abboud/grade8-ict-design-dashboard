@@ -1,74 +1,104 @@
-// Week 5 — Sep 28 – Oct 2 — The Design Process (Code.org CSD Unit 4, Lesson 4: User Centered Design - Try and Reflect)
+// Week 5: Sep 28 - Oct 2: The Design Process (Code.org CSD 2026 Unit 4, Lesson 5: User Interfaces (taught over both classes))
 G8_WEEKS.push({
-  week: 5,
-  dates: "Sep 28 – Oct 2",
-  status: "content",
-  topic: "The Design Process",
-  essentialQuestion: "How can we design a product to meet a user's needs?",
-  standards: "CS.MS.2.2, CS.MS.3.1 — CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback.",
-  lessonMapping: "Code.org CSD Unit 4, Lesson 4: User-Centered Design - Try and Reflect",
-  evidenceOutcomes: "CS.MS.2.2 — a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. CS.MS.3.1 — c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs.",
-  walt: "We are learning to prototype and reflect on how well a design meets user needs.",
-  wilf: ["I can create a prototype, receive feedback, and explain improvements."],
-  keyConcepts: ["Try", "Reflect", "Prototype", "Feedback", "Design rationale"],
-  crossCurricular: "Art: sketching; SEL: critique protocols.",
-  resources: "Code.org Lesson 4; drawing materials; design charrette materials",
-  formative: "Prototype reflection: evidence of link to user need (Lesson 2)",
-  summative: null,
-  lessons: [
+  "week": 5,
+  "dates": "Sep 28 – Oct 2",
+  "status": "content",
+  "topic": "The Design Process",
+  "essentialQuestion": "How can a paper prototype help us test an app before it is built?",
+  "standards": "CS.MS.2.2, CS.MS.3.1: CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback.",
+  "lessonMapping": "Code.org CSD 2026 Unit 4, Lesson 5: User Interfaces (taught over both classes)",
+  "evidenceOutcomes": "CS.MS.2.2: a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. CS.MS.3.1: c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs.",
+  "walt": "We are learning to test an app idea using a paper prototype.",
+  "wilf": [
+    "I can use a paper prototype to test an app and record specific feedback."
+  ],
+  "keyConcepts": [
+    "User interface",
+    "Paper prototype",
+    "User testing",
+    "Usability"
+  ],
+  "crossCurricular": "Art/Design: screen layout; English: precise observation notes.",
+  "resources": "Code.org activities: Lesson 5: User Interface Screens, User Testing (Computer), User Testing (User); Code.org lesson slides",
+  "formative": "Paper prototype user test notes (Lesson 2)",
+  "summative": null,
+  "lessons": [
     {
-      number: 1,
-      title: "Try: Prototyping the Smart Clothing Solution",
-      duration: "~50-60 min",
-      objective: "Create a first prototype of a solution that addresses the focus need selected last week.",
-      vocabulary: [
-        { term: "Prototype", definition: "An early, rough version of a design built to test an idea before making the real thing." },
-        { term: "Iteration", definition: "Making a design better through repeated rounds of trying, testing, and improving it." }
+      "number": 1,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 5 (Part 1): Testing a Paper Prototype",
+      "objective": "Use a paper prototype to test the design of an app.",
+      "vocabulary": [
+        {
+          "term": "Prototype",
+          "definition": "A first or early model of a product that lets you test ideas before building the final version."
+        },
+        {
+          "term": "User Interface",
+          "definition": "The visual parts of an app (screens, buttons, text) that a user sees and uses to control it. Often shortened to UI."
+        }
       ],
-      warmup: "Groups retrieve their focus need, criteria, and initial ideas from Week 4.",
-      main: [
-        "Recap: today we turn last week's idea into an actual (rough, quick) prototype.",
-        "Introduce prototyping as low-stakes and iterative — it doesn't need to be perfect, it needs to test the idea.",
-        "Groups sketch/build a prototype of their smart clothing solution using drawing materials.",
-        "Groups annotate their prototype: label which parts address which design criteria."
+      "warmup": "Journal: think of an app you use every day. What is one thing on its screen that makes it easy to use?",
+      "main": [
+        "Introduce the 'Txt Ur Grndkdz' chat app and its paper prototype: each card is one screen.",
+        "Model the roles: one student acts as 'the computer' and swaps screens, one is the user, one observes and takes notes.",
+        "Groups run the paper prototype test, rotating roles so everyone tries each role.",
+        "Observers record what the user did, where they got stuck, and what they said."
       ],
-      code: null,
-      task: "Build a labeled prototype sketch that clearly shows how it addresses your group's chosen focus need and criteria.",
-      successChecklist: [
-        "Prototype is a genuine attempt to address the chosen need (not decoration).",
-        "Prototype is labeled/annotated so someone else could understand it."
+      "literacyStrategy": {
+        "name": "Frayer Model",
+        "note": "Frayer Model for 'User Interface' so students separate what the user sees and touches from what the app does behind the scenes."
+      },
+      "task": "Code.org activity (User Interface Screens + User Testing (Computer) + User Testing (User)): Run a paper prototype test in a group of 3 and record at least 3 specific observations.",
+      "successChecklist": [
+        "Took each role (computer, user, observer) at least once.",
+        "Observations are specific, not just 'good' or 'bad'."
       ],
-      exitTicket: "'What's the part of your prototype you're least sure will work?'",
-      notes: null
+      "exitTicket": "'What is one thing a user found confusing, and on which screen?'",
+      "codeOrgActivities": [
+        "User Interface Screens",
+        "User Testing (Computer)",
+        "User Testing (User)"
+      ]
     },
     {
-      number: 2,
-      title: "Reflect: Feedback and Design Rationale",
-      duration: "~50-60 min",
-      objective: "Collect feedback on a prototype and explain, with evidence, how it could be improved.",
-      vocabulary: [
-        { term: "Feedback", definition: "Specific, useful comments from someone else about how well something is working." },
-        { term: "Design Rationale", definition: "The reasons behind a design decision — explaining WHY you made a choice, not just what you made." }
+      "number": 2,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 5 (Part 2): Debrief and User Feedback",
+      "objective": "Collect and analyze feedback from user testing with a paper prototype.",
+      "vocabulary": [
+        {
+          "term": "Paper Prototype",
+          "definition": "Hand-drawn app screens on paper or cards, used to test an idea quickly before building it on a computer."
+        },
+        {
+          "term": "Usability",
+          "definition": "How easy and pleasant something is to actually use."
+        }
       ],
-      warmup: "Quick share: show your prototype to the person next to you for 30 seconds before we start.",
-      main: [
-        "Set up a 'design charrette' — a structured feedback session where groups view and comment on each other's prototypes, using Accountable Talk stems so feedback is specific ('I noticed...', 'Have you considered...?', 'What would happen if...?').",
-        "Groups rotate to view 2-3 other prototypes, leaving structured feedback (What works? What's unclear? What would you change?).",
-        "Groups return to their own prototype and read the feedback they received.",
-        "Groups write a short design rationale: what they'd change based on the feedback, and why."
+      "warmup": "Quick recall: what was the hardest part of the app for your user to figure out?",
+      "main": [
+        "Groups share their test observations and look for patterns across groups.",
+        "Class debrief: which problems came from the user interface, and which from the idea itself?",
+        "Discuss why testing on paper first saves time before anything is built on a computer.",
+        "Journal: write one change you would make to the app and the observation that supports it."
       ],
-      code: null,
-      literacyStrategy: {
-        name: "Accountable Talk",
-        note: "The design charrette rotation runs on Accountable Talk stems so feedback across multiple groups stays consistent, specific, and respectful rather than a vague 'looks cool.'"
-      },
-      task: "Collect feedback from at least 2 other groups and write a design rationale explaining one change you'd make.",
-      successChecklist: [
-        "Gave specific, useful feedback to at least 2 other groups.",
-        "Design rationale clearly explains a change and the reasoning behind it, linked to a user need."
+      "task": "Code.org activity (User Interface Screens + User Testing (Computer) + User Testing (User)): Summarize your group's test results and suggest one improvement backed by an observation.",
+      "successChecklist": [
+        "Feedback is linked to a specific screen or feature.",
+        "Suggested change is backed by something a user actually did or said."
       ],
-      exitTicket: "Formal Week 5 formative check: submit prototype reflection with evidence linked to a user need, via Toddle.",
-      notes: "Extension: students create multiple prototype options and compare tradeoffs. Reinforce: the design process is iterative, not a straight line — it's normal to go back and change things."
+      "exitTicket": "Formal Week 5 formative check: submit paper prototype test notes via Toddle.",
+      "codeOrgActivities": [
+        "User Interface Screens",
+        "User Testing (Computer)",
+        "User Testing (User)"
+      ]
     }
-  ]
+  ],
+  "planChangeNote": "Replaces the smart clothing lessons: students lost interest, so the class moved on to Code.org Lesson 5."
 });

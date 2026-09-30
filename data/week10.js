@@ -1,78 +1,98 @@
-// Week 10 — Nov 2 – Nov 6 — The Design Process (Code.org CSD Unit 4, Lesson 8: Project - Paper Prototype)
-// SUMMATIVE CHECKPOINT — Paper Prototype & Testing Notes
+// Week 10: Nov 2 - Nov 6: The Design Process (Code.org CSD 2026 Unit 4, Lesson 12: Build a Paper Prototype; Code.org CSD 2026 Unit 4, Lesson 13: Prototype Testing)
 G8_WEEKS.push({
-  week: 10,
-  dates: "Nov 2 – Nov 6",
-  status: "content",
-  topic: "The Design Process",
-  essentialQuestion: "How can paper prototyping help us test an idea quickly?",
-  standards: "CS.MS.3.1, CS.MS.2.2 — CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback. CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design.",
-  lessonMapping: "Code.org CSD Unit 4, Lesson 8: Project - Paper Prototype",
-  evidenceOutcomes: "CS.MS.3.1 — c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. CS.MS.2.2 — a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. c. Discuss issues of bias and accessibility in the design of existing technologies.",
-  walt: "We are learning to build and test a paper prototype before going digital.",
-  wilf: ["I can create a paper prototype that addresses a user need and gather useful feedback."],
-  keyConcepts: ["Paper prototyping", "User testing", "Screen flow", "Teamwork"],
-  crossCurricular: "Art: visual layout; English: explaining process.",
-  resources: "Code.org Lesson 8 project guide; paper, markers, sticky notes; Paper Prototype rubric",
-  formative: null,
-  summative: "Paper Prototype & Testing Notes — Design Process checkpoint",
-  lessons: [
+  "week": 10,
+  "dates": "Nov 2 – Nov 6",
+  "status": "content",
+  "topic": "The Design Process",
+  "essentialQuestion": "How can a team prototype and test an app before coding it?",
+  "standards": "CS.MS.2.2, CS.MS.3.1: CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing project management, crowdsourcing, and feedback.",
+  "lessonMapping": "Code.org CSD 2026 Unit 4, Lesson 12: Build a Paper Prototype; Code.org CSD 2026 Unit 4, Lesson 13: Prototype Testing",
+  "evidenceOutcomes": "CS.MS.2.2: a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices. CS.MS.3.1: c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs.",
+  "walt": "We are learning to build a team paper prototype and test it with real users.",
+  "wilf": [
+    "I can build my part of a team paper prototype that shows the user flow.",
+    "I can run a test and decide what to add, remove or improve."
+  ],
+  "keyConcepts": [
+    "Team paper prototype",
+    "User flow",
+    "Testing",
+    "Iteration"
+  ],
+  "crossCurricular": "Art: visual layout; English: writing clear test instructions.",
+  "resources": "Code.org activities: Lesson 12: Paper Prototype Planning, Phone Paper Prototype; Lesson 13: Paper Prototype User Testing, User Test Cases; Code.org lesson slides",
+  "formative": "Team paper prototype and test summary (Lesson 2)",
+  "summative": null,
+  "lessons": [
     {
-      number: 1,
-      title: "Building the Paper Prototype",
-      duration: "~50-60 min",
-      objective: "Build a multi-screen paper prototype of your team's app idea.",
-      vocabulary: [
-        { term: "Paper Prototype", definition: "A version of an app made entirely out of paper — hand-drawn screens used to test an idea before building it digitally." },
-        { term: "Screen Flow", definition: "The path a user follows moving from one screen to the next in an app." }
+      "number": 1,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 12: Build a Paper Prototype",
+      "objective": "Create a team paper prototype that shows the user flow of the app.",
+      "vocabulary": [
+        {
+          "term": "Visual Hierarchy",
+          "definition": "Arranging a screen so the most important things are noticed first, through size, position or color."
+        }
       ],
-      warmup: "Teams retrieve their top app idea and the user need it addresses from Week 9.",
-      main: [
-        "Explain today's task: build a full paper prototype of your app idea — every screen a user would see.",
-        "Review role assignments so every team member has a clear job (drawing, writing, organizing screens).",
-        "Teams sketch each screen of their app on paper, using provided screen templates.",
-        "Teams map out the screen flow — arrows/notes showing how a user moves between screens.",
-        "Teacher circulates to check screens address the identified user need."
+      "warmup": "Journal: why build the app on paper first instead of going straight to the computer?",
+      "main": [
+        "Review what makes a good paper prototype.",
+        "Teams plan every screen and assign each member screens to build.",
+        "Build the screens, showing where every button leads.",
+        "Check the full user flow together from the first screen to the last."
       ],
-      code: null,
-      task: "Build a complete paper prototype (all key screens) with a clear screen flow showing how a user moves through the app.",
-      successChecklist: [
-        "Prototype includes all the key screens needed for the app idea to make sense.",
-        "Screen flow is clear enough that someone else could follow it."
+      "task": "Code.org activity (Paper Prototype Planning + Phone Paper Prototype): Build your assigned screens so the team prototype shows the complete user flow.",
+      "successChecklist": [
+        "Your screens are complete and labeled.",
+        "Every button shows which screen it leads to."
       ],
-      exitTicket: "'What's one screen you're not 100% sure about yet?'",
-      notes: "This is Part 1 of the summative checkpoint — testing and revision happens in Lesson 2. Store all materials safely, they're needed for the digital build later in the term."
+      "exitTicket": "Collect prototypes: each team hands in its complete set of screens.",
+      "codeOrgActivities": [
+        "Paper Prototype Planning",
+        "Phone Paper Prototype"
+      ]
     },
     {
-      number: 2,
-      title: "User Testing & Submission",
-      duration: "~50-60 min",
-      objective: "Conduct user testing on your paper prototype and revise it based on real feedback.",
-      vocabulary: [
-        { term: "Test", definition: "Having a real person try to use your design so you can see what works and what doesn't." },
-        { term: "Stakeholder", definition: "Anyone who has an interest in or is affected by a project — for an app, this usually means the users it's designed for." }
+      "number": 2,
+      "duration": "~50-60 min",
+      "code": null,
+      "notes": null,
+      "title": "Lesson 13: Prototype Testing",
+      "objective": "Run user tests with the paper prototype and decide which features to add, remove or improve.",
+      "vocabulary": [
+        {
+          "term": "Iteration",
+          "definition": "Making a design better through repeated rounds of trying, testing and improving."
+        },
+        {
+          "term": "Revise",
+          "definition": "Changing something to make it better, based on feedback or new information."
+        }
       ],
-      warmup: "Quick reminder of the user testing process: one person acts as the 'app,' another completes a task using it.",
-      main: [
-        "Teams swap prototypes with another team (acting as test users/stakeholders).",
-        "Testers attempt a specific task using the other team's paper prototype, while the design team observes silently.",
-        "Testers give structured feedback using Accountable Talk stems ('I noticed...', 'I wasn't sure how to...', 'Can you explain why this screen...?') — what worked, what was confusing, what they'd change.",
-        "Teams revise their prototype based on the feedback received.",
-        "Teams compile their final paper prototype + testing notes for summative submission."
+      "warmup": "Journal: what do you most want to find out from testing your prototype?",
+      "main": [
+        "Teams write a test plan: the tasks users will try and what to watch for.",
+        "Run tests with users from another team, taking roles of computer, facilitator and observer.",
+        "Collect observations and user comments.",
+        "Decide which features to add, remove or improve before building in App Lab."
       ],
-      code: null,
-      literacyStrategy: {
-        name: "Accountable Talk",
-        note: "Because this feedback feeds directly into a summative grade, Accountable Talk stems keep it constructive and specific rather than a vague thumbs up/down — testers explain their reasoning, not just their reaction."
+      "literacyStrategy": {
+        "name": "Accountable Talk",
+        "note": "Teams discuss test results with stems: 'The user struggled when...', 'We should change... because...'."
       },
-      task: "Complete user testing with another team, revise your prototype based on feedback, and submit your final paper prototype + testing notes.",
-      successChecklist: [
-        "Testing was completed with real observation, not just a quick glance.",
-        "At least one visible revision was made based on testing feedback.",
-        "Testing notes clearly document what was learned."
+      "task": "Code.org activity (Paper Prototype User Testing + User Test Cases): Test your prototype with at least 2 users and write a test summary with priority changes.",
+      "successChecklist": [
+        "The test plan has clear tasks for the user.",
+        "Priority changes are backed by what users did or said."
       ],
-      exitTicket: "Summative submission: paper prototype + testing notes, via Toddle. See the Rubrics tab for scoring criteria.",
-      notes: "Extension: students create alternative screen flows for different types of users. Keep the paper prototypes — they become the basis for the digital build later in the term."
+      "exitTicket": "Formal Week 10 formative check: submit your test summary via Toddle.",
+      "codeOrgActivities": [
+        "Paper Prototype User Testing",
+        "User Test Cases"
+      ]
     }
   ]
 });
