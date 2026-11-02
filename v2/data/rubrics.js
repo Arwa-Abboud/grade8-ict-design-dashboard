@@ -4,7 +4,7 @@
 var RUBRICS = {
   summative: {
     title: "Robot Faces: Interactive Animations Summative",
-    subtitle: "Summative: Week 11 (inside the Weeks 11-13 assessment window). 100 points. Based on the Code.org Robot Faces rubric.",
+    subtitle: "Summative: Week 12 (inside the Weeks 11-13 assessment window). 100 points. Based on the Code.org Robot Faces rubric.",
     points: 100,
     categories: [
       {
@@ -61,95 +61,156 @@ var RUBRICS = {
   },
   formatives: [
     {
-      week: "3",
-      title: "User Profile Evidence & Design Improvement",
-      points: 10,
-      categories: [
-        { name: "Evidence-based reasoning", points: 5, description: "Improvement is clearly justified using specific user profile details." },
-        { name: "Clarity", points: 5, description: "Improvement and reasoning are clearly written and easy to follow." }
+      "week": "3",
+      "title": "User Profile Evidence & Design Improvement",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Evidence-based reasoning",
+          "points": 5,
+          "description": "Improvement is clearly justified using specific user profile details."
+        },
+        {
+          "name": "Clarity",
+          "points": 5,
+          "description": "Improvement and reasoning are clearly written and easy to follow."
+        }
       ]
     },
     {
-      week: "4",
-      title: "Focus Need & Design Criteria",
-      points: 10,
-      categories: [
-        { name: "Focus need clarity", points: 5, description: "The selected need is specific and clearly stated, not vague." },
-        { name: "Design criteria quality", points: 5, description: "Criteria are specific enough to actually check a solution against." }
+      "week": "4",
+      "title": "Focus Need & Design Criteria",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Focus need clarity",
+          "points": 5,
+          "description": "The selected need is specific and clearly stated, not vague."
+        },
+        {
+          "name": "Design criteria quality",
+          "points": 5,
+          "description": "Criteria are specific enough to actually check a solution against."
+        }
       ]
     },
     {
-      week: "5",
-      title: "Paper Prototype User Test Notes",
-      points: 10,
-      categories: [
-        { name: "Specific observations", points: 5, description: "Notes describe what the user actually did or said, linked to a screen." },
-        { name: "Improvement suggestion", points: 5, description: "Suggested change is backed by an observation from the test." }
+      "week": "5",
+      "title": "Paper Prototype User Test Notes",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Specific observations",
+          "points": 5,
+          "description": "Notes describe what the user actually did or said, linked to a screen."
+        },
+        {
+          "name": "Improvement suggestion",
+          "points": 5,
+          "description": "Suggested change is backed by an observation from the test."
+        }
       ]
     },
     {
-      week: "6",
-      title: "Improved Screen & User Needs",
-      points: 10,
-      categories: [
-        { name: "Feedback categories and improved screen", points: 5, description: "Feedback is sorted into clear categories and the improved screen responds to one of them." },
-        { name: "Need statements", points: 5, description: "Need statements are backed by specific evidence from the user interview." }
+      "week": "6",
+      "title": "Improved Screen & User Needs",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Feedback categories and improved screen",
+          "points": 5,
+          "description": "Feedback is sorted into clear categories and the improved screen responds to one of them."
+        },
+        {
+          "name": "Need statements",
+          "points": 5,
+          "description": "Need statements are backed by specific evidence from the user interview."
+        }
       ]
     },
     {
-      week: "8",
-      title: "Animation and Game Design for Users",
-      points: 10,
-      categories: [
-        { name: "Matching designs to users", points: 5, description: "Each design is matched to a user with a clear reason." },
-        { name: "Own design", points: 5, description: "The student's design clearly shows who it is for and what it does." }
+      "week": "8",
+      "title": "Animation and Game Design for Users",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Matching designs to users",
+          "points": 5,
+          "description": "Each design is matched to a user with a clear reason."
+        },
+        {
+          "name": "Own design",
+          "points": 5,
+          "description": "The student's design clearly shows who it is for and what it does."
+        }
       ]
     },
     {
-      week: "9",
-      title: "Annotated Code: Parameters",
-      points: 10,
-      categories: [
-        { name: "Accurate drawing", points: 5, description: "Shapes are placed and sized as intended, with at least three shapes." },
-        { name: "Parameter labels", points: 5, description: "Each parameter in the sample is correctly labelled (x, y, width, height)." }
+      "week": "10",
+      "title": "Annotated Code: Parameters",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Accurate drawing",
+          "points": 5,
+          "description": "Shapes are placed and sized as intended, with at least three shapes."
+        },
+        {
+          "name": "Parameter labels",
+          "points": 5,
+          "description": "Each parameter in the sample is correctly labelled (x, y, width, height)."
+        }
       ]
     },
     {
-      week: "10",
-      title: "Variables and Random Numbers",
-      points: 10,
-      categories: [
-        { name: "Variables used correctly", points: 5, description: "At least one clearly named variable controls part of the drawing." },
-        { name: "randomNumber() and range", points: 5, description: "randomNumber() is used correctly and the student explains the range." }
+      "week": "11",
+      "title": "Variables and Random Numbers",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Variables used correctly",
+          "points": 5,
+          "description": "At least one clearly named variable controls part of the drawing."
+        },
+        {
+          "name": "randomNumber() and range",
+          "points": 5,
+          "description": "randomNumber() is used correctly and the student explains the range."
+        }
       ]
     },
     {
-      week: "12",
-      title: "Sprites and Sprite Properties",
-      points: 10,
-      categories: [
-        { name: "Sprites created", points: 5, description: "At least two clearly named sprites with images and positions." },
-        { name: "Properties changed", points: 5, description: "At least three sprite properties are changed to improve the scene." }
+      "week": "13",
+      "title": "Sprites Setup Check",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Sprites created",
+          "points": 5,
+          "description": "At least two clearly named sprites with images and positions."
+        },
+        {
+          "name": "Clear names",
+          "points": 5,
+          "description": "Sprite names describe what each sprite is (e.g. cat, sun), not sprite1."
+        }
       ]
     },
     {
-      week: "13",
-      title: "Readable Text (Peer Review)",
-      points: 10,
-      categories: [
-        { name: "Readability", points: 5, description: "Text size, contrast and placement make it easy to read." },
-        { name: "Purpose", points: 5, description: "The text clearly supports the scene for its audience." }
-      ]
-    },
-    {
-      week: "14",
-      title: "Captioned Scenes (Portfolio)",
-      points: 20,
-      categories: [
-        { name: "Sequence and coordinates", points: 5, description: "Elements appear as intended and are placed using the coordinate grid." },
-        { name: "Sprites and properties", points: 5, description: "At least two sprites, each with a property changed after creation." },
-        { name: "Text", points: 5, description: "At least two readable lines of text that suit the scene." },
-        { name: "Improvement and reflection", points: 5, description: "At least one change made from peer feedback, explained in the reflection." }
+      "week": "14",
+      "title": "Sprite Properties",
+      "points": 10,
+      "categories": [
+        {
+          "name": "Properties changed",
+          "points": 5,
+          "description": "At least three sprite properties are changed to improve the scene."
+        },
+        {
+          "name": "Purposeful changes",
+          "points": 5,
+          "description": "The student explains how each property change improves the scene."
+        }
       ]
     }
   ]

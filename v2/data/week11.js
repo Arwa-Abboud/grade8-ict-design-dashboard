@@ -1,102 +1,104 @@
-// Week 11: Nov 9 – Nov 13: Interactive Animations and Games (Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 7: Mini-Project - Robot Faces (over two classes))
+// Week 11: Nov 9 – Nov 13: Interactive Animations and Games (Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 5: Variables; Lesson 6: Random Numbers)
 G8_WEEKS.push({
   "week": 11,
   "dates": "Nov 9 – Nov 13",
   "status": "content",
   "topic": "Interactive Animations and Games",
-  "essentialQuestion": "How can we plan a creative coding project before building it? How can testing and reflection improve a creative coded artifact?",
-  "standards": "CS.MS.1.1, CS.MS.3.1, CS.MS.3.3: CS.MS.1.1: Complex problems can be broken into smaller parts to facilitate program implementation and review processes. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing strategies for project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems.",
-  "lessonMapping": "Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 7: Mini-Project - Robot Faces (over two classes)",
-  "evidenceOutcomes": "CS.MS.1.1 Evidence Outcomes - Students Can: a. Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug; c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug; c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases.",
-  "walt": "We are learning to use the problem-solving process to plan a programmed robot face. We are learning to build, test, debug, and reflect on a programmed robot face.",
+  "essentialQuestion": "How can variables help us store and reuse information in a program? How can randomness make a program behave differently each time it runs?",
+  "standards": "CS.MS.1.2, CS.MS.3.1, CS.MS.3.3: CS.MS.1.2: Data can be collected, transformed and analyzed to develop computational models. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing strategies for project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems.",
+  "lessonMapping": "Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 5: Variables; Lesson 6: Random Numbers",
+  "evidenceOutcomes": "CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases. CS.MS.1.2 Evidence Outcomes - Students Can: a. Collect data using computational tools and transform the data to make it more useful and reliable. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases.",
+  "walt": "We are learning to create variables and use them to label values in code. We are learning to use random numbers to create variation in a program.",
   "wilf": [
-    "I can define my design goal, plan shapes/variables/randomness, and prepare a simple build checklist.",
-    "I can create a robot face using shapes, variables, and randomness, then explain how I improved it."
+    "I can create a variable, assign it a value, and use it to control part of a drawing.",
+    "I can use randomNumber() with variables to make a program generate different outputs."
   ],
   "keyConcepts": [
-    "Mini-project",
-    "Planning",
-    "Shapes",
     "Variables",
-    "Randomness",
-    "Reflection"
+    "Assigning values",
+    "Random numbers",
+    "Ranges",
+    "Testing repeated runs"
   ],
-  "crossCurricular": "Art: character design; English: planning and annotation. Art: creative expression; English: reflection writing.",
-  "resources": "Code.org activities: Code.org 3b Lesson 7: Robot Face Planning, Problem Solving with Programming, Robot Faces Rubric; Code.org 3b Lesson 7: Robot Faces Rubric, Game Lab; Code.org lesson slides",
-  "formative": null,
-  "summative": "Summative: Robot Faces mini-project (rubric scored this week, inside the Weeks 11-13 assessment window)",
+  "crossCurricular": "Math: algebraic thinking; English: clear naming and explanation. Math: probability and number ranges; Science: repeated trials and observation.",
+  "resources": "Code.org activities: Code.org 3b Lesson 5: Game Lab online levels, Variables (reference); Code.org 3b Lesson 6: Game Lab online levels, Random Numbers (reference); Code.org lesson slides",
+  "formative": "Teacher check: program uses randomNumber() correctly and student explains the range. (Lesson 2)",
+  "summative": null,
   "lessons": [
     {
       "number": 1,
       "duration": "~50-60 min",
-      "title": "Code.org 3b Lesson 7: Robot Faces (Part 1: Define and Prepare)",
-      "objective": "Use the problem-solving process to plan a programmed robot face.",
+      "title": "Code.org 3b Lesson 5: Variables",
+      "objective": "Learn to create variables and use them to label values in code.",
       "vocabulary": [
         {
-          "term": "Mini-Project",
-          "definition": "A short creative project that puts recent coding skills together."
+          "term": "Variable",
+          "definition": "A label for a piece of information used in a program."
         },
         {
-          "term": "Decompose",
-          "definition": "Breaking a big problem into smaller, easier parts."
+          "term": "Assign",
+          "definition": "To give a variable a value, using the = sign."
         }
       ],
-      "warmup": "Quick review of the code learned so far: shapes, fill, variables, randomNumber().",
+      "warmup": "Input, output, storage, processing: 'Where does a computer keep information it needs later?'",
       "main": [
-        "Introduce the Robot Faces mini-project and the rubric.",
-        "Step 1 Define: describe the robot face you want to make.",
-        "Step 2 Prepare: sketch it on the grid and list the shapes, variables and random values you need.",
-        "Peer feedback on plans before building."
+        "Introduce variables as labelled storage, using the Introduction to Variables video.",
+        "Model var size = 100; and using size as a parameter.",
+        "Students predict variable output, modify values, and use variables to control position, size, or color in a scene.",
+        "Reflection: why is a good variable name important?"
       ],
-      "code": null,
-      "task": "Students review required coding skills, sketch a robot face, list the code components needed, and receive peer feedback before building.",
+      "code": "var size = 100;\nellipse(200, 200, size, size);",
+      "task": "Use at least one variable to control the position, size or color of a shape in a drawing.",
       "successChecklist": [
-        "My sketch shows where each shape goes.",
-        "My plan lists the variables and random values I will use."
+        "I can create a variable and give it a value.",
+        "My variable controls part of my drawing."
       ],
-      "exitTicket": "Project planning checkpoint: sketch, required features checklist, and peer feedback note.",
-      "notes": "Support: Provide a simplified planning sheet with required features and examples. Extension: Students design multiple facial expressions or theme variations before choosing one.",
+      "exitTicket": "Exit ticket: define variable and explain one variable used in their code.",
+      "notes": "Support: Provide partially completed code with missing variable names/values. Extension: Students use one variable in more than one place to show reuse and efficiency. This lesson may need the full period because variables are a new concept.",
       "codeOrgActivities": [
-        "Robot Face Planning",
-        "Problem Solving with Programming",
-        "Robot Faces Rubric"
-      ]
+        "Game Lab online levels",
+        "Variables (reference)"
+      ],
+      "literacyStrategy": {
+        "name": "Frayer Model",
+        "note": "Frayer Model for 'Variable': a labelled box for a value, not just any word in the code."
+      }
     },
     {
       "number": 2,
       "duration": "~50-60 min",
-      "title": "Code.org 3b Lesson 7: Robot Faces (Part 2: Try and Reflect)",
-      "objective": "Build, test, debug and reflect on a programmed robot face.",
+      "title": "Code.org 3b Lesson 6: Random Numbers",
+      "objective": "Learn to use random numbers to create variation in a program.",
       "vocabulary": [
         {
-          "term": "Iterate",
-          "definition": "To improve something through repeated rounds of testing and changing it."
+          "term": "Random Number",
+          "definition": "A number the computer picks by chance from a range, so the result can change each time the program runs."
         },
         {
-          "term": "Reflect",
-          "definition": "Thinking back on what worked, what didn't, and what to do next."
+          "term": "Range",
+          "definition": "The smallest and largest numbers that randomNumber() can choose between."
         }
       ],
-      "warmup": "Check your plan: which part will you build first?",
+      "warmup": "Run the same program three times: 'Why is the picture different each time?'",
       "main": [
-        "Step 3 Try: build the robot face in Game Lab from the plan.",
-        "Test against the rubric: sequence, at least four shape types, variables with randomNumber().",
-        "Gallery walk: view classmates' robot faces.",
-        "Step 4 Reflect: write a short reflection and take a screenshot."
+        "Introduce randomNumber(min, max) and test it with repeated runs.",
+        "Learn to update a value stored in a variable.",
+        "Students run programs multiple times, record how outputs change, then use randomNumber() to create a randomized image.",
+        "Explain the range you chose and why."
       ],
-      "code": null,
-      "task": "Students build their robot face, test required features, make revisions, and complete a short reflection with a screenshot.",
+      "code": "var x = randomNumber(50, 350);\nellipse(x, 200, 60, 60);",
+      "task": "Use randomNumber() with variables to make a picture that changes every time it runs.",
       "successChecklist": [
-        "My robot face uses shapes, variables and randomness.",
-        "I can explain how I improved it."
+        "My program uses randomNumber() correctly.",
+        "I can explain the range I chose."
       ],
-      "exitTicket": "Summative: submit the Robot Faces program link, screenshot and reflection via Toddle.",
-      "notes": "Support: Use a checklist of minimum required code features; allow students to work from their plan. Extension: Students add randomized features or explain how variables made their code more efficient. Do not begin sprites until the mini-project is completed and reflected on.",
+      "exitTicket": "Teacher check: program uses randomNumber() correctly and student explains the range.",
+      "notes": "Support: Provide a visual number range and starter code with one random value. Extension: Students randomize more than one property, such as size, location, or color. Do not combine with the mini-project. Students need time to experiment and test.",
       "codeOrgActivities": [
-        "Robot Faces Rubric",
-        "Game Lab"
+        "Game Lab online levels",
+        "Random Numbers (reference)"
       ]
     }
   ],
-  "planChangeNote": "Plan v2: switched from the Design Process unit to Code.org Unit 3b Interactive Animations and Games (students found the worksheet-heavy unit boring)."
+  "planChangeNote": "Week 9 was not taught (MAP testing), so from Week 10 every lesson moved one week later. Code.org 3b Lessons 10-11 (Text, Captioned Scenes) no longer fit before exams."
 });

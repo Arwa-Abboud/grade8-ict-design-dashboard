@@ -1,112 +1,102 @@
-// Week 12: Nov 16 – Nov 20: Interactive Animations and Games (Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 8: Sprites; Lesson 9: Sprite Properties)
+// Week 12: Nov 16 – Nov 20: Interactive Animations and Games (Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 7: Mini-Project - Robot Faces (over two classes))
 G8_WEEKS.push({
   "week": 12,
   "dates": "Nov 16 – Nov 20",
   "status": "content",
   "topic": "Interactive Animations and Games",
-  "essentialQuestion": "How do sprites help programmers manage more complex images and animations? How can changing sprite properties help us control a digital scene?",
+  "essentialQuestion": "How can we plan a creative coding project before building it? How can testing and reflection improve a creative coded artifact?",
   "standards": "CS.MS.1.1, CS.MS.3.1, CS.MS.3.3: CS.MS.1.1: Complex problems can be broken into smaller parts to facilitate program implementation and review processes. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing strategies for project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems.",
-  "lessonMapping": "Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 8: Sprites; Lesson 9: Sprite Properties",
-  "evidenceOutcomes": "CS.MS.1.1 Evidence Outcomes - Students Can: a. Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases.",
-  "walt": "We are learning to create sprites and assign images in Game Lab. We are learning to modify sprite properties such as position, scale, rotation, and visibility.",
+  "lessonMapping": "Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 7: Mini-Project - Robot Faces (over two classes)",
+  "evidenceOutcomes": "CS.MS.1.1 Evidence Outcomes - Students Can: a. Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug; c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug; c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases.",
+  "walt": "We are learning to use the problem-solving process to plan a programmed robot face. We are learning to build, test, debug, and reflect on a programmed robot face.",
   "wilf": [
-    "I can create sprites, name them clearly, assign images, and place them on the screen.",
-    "I can change sprite properties to improve the appearance and meaning of a scene."
+    "I can define my design goal, plan shapes/variables/randomness, and prepare a simple build checklist.",
+    "I can create a robot face using shapes, variables, and randomness, then explain how I improved it."
   ],
   "keyConcepts": [
-    "Sprites",
-    "Animation tab",
-    "Sprite properties",
-    "Dot notation",
-    "Scene building"
+    "Mini-project",
+    "Planning",
+    "Shapes",
+    "Variables",
+    "Randomness",
+    "Reflection"
   ],
-  "crossCurricular": "Art: digital imagery and visual storytelling; Math: position and scale. Math: transformations and scale; Art: mood, composition, and layout.",
-  "resources": "Code.org activities: Code.org 3b Lesson 8: Game Lab online levels, Introduction to Sprites (video); Code.org 3b Lesson 9: Game Lab online levels, Sprite Properties (video); Code.org lesson slides",
-  "formative": "Code check: students correctly modify at least three sprite properties. (Lesson 2)",
-  "summative": null,
+  "crossCurricular": "Art: character design; English: planning and annotation. Art: creative expression; English: reflection writing.",
+  "resources": "Code.org activities: Code.org 3b Lesson 7: Robot Face Planning, Problem Solving with Programming, Robot Faces Rubric; Code.org 3b Lesson 7: Robot Faces Rubric, Game Lab; Code.org lesson slides",
+  "formative": null,
+  "summative": "Summative: Robot Faces mini-project (rubric scored this week, inside the Weeks 11-13 assessment window)",
   "lessons": [
     {
       "number": 1,
       "duration": "~50-60 min",
-      "title": "Code.org 3b Lesson 8: Sprites",
-      "objective": "Create sprites, name them clearly, assign images and place them on the screen.",
+      "title": "Code.org 3b Lesson 7: Robot Faces (Part 1: Define and Prepare)",
+      "objective": "Use the problem-solving process to plan a programmed robot face.",
       "vocabulary": [
         {
-          "term": "Sprite",
-          "definition": "A character on the screen with properties that describe its location, movement and look."
+          "term": "Mini-Project",
+          "definition": "A short creative project that puts recent coding skills together."
         },
         {
-          "term": "Animation Tab",
-          "definition": "The part of Game Lab where you choose or draw the images for sprites."
+          "term": "Decompose",
+          "definition": "Breaking a big problem into smaller, easier parts."
         }
       ],
-      "warmup": "'How much information would a program need to remember to draw a character?'",
+      "warmup": "Quick review of the code learned so far: shapes, fill, variables, randomNumber().",
       "main": [
-        "Introduce sprites as one variable that holds everything about a character.",
-        "Use createSprite(), setAnimation() and drawSprites(); explore the Animation tab.",
-        "Students create and name sprites, assign images, position them on the canvas, and compare sprites with shape commands.",
-        "Journal: why is a sprite easier than lots of separate shapes?"
+        "Introduce the Robot Faces mini-project and the rubric.",
+        "Step 1 Define: describe the robot face you want to make.",
+        "Step 2 Prepare: sketch it on the grid and list the shapes, variables and random values you need.",
+        "Peer feedback on plans before building."
       ],
-      "code": "var cat = createSprite(200, 200);\ncat.setAnimation(\"cat\");\ndrawSprites();",
-      "task": "Students create and name sprites, assign images, position them on the canvas, and compare sprites with shape commands.",
+      "code": null,
+      "task": "Students review required coding skills, sketch a robot face, list the code components needed, and receive peer feedback before building.",
       "successChecklist": [
-        "I created at least two clearly named sprites.",
-        "Each sprite has an image and a position."
+        "My sketch shows where each shape goes.",
+        "My plan lists the variables and random values I will use."
       ],
-      "exitTicket": "Teacher check: at least two correctly named sprites with images and positions.",
-      "notes": "Support: Provide a sprite setup checklist and model sprite naming conventions. Extension: Students create a themed scene with several sprites and explain why sprites are useful. This is a full new concept. Avoid combining with sprite properties.",
+      "exitTicket": "Project planning checkpoint: sketch, required features checklist, and peer feedback note.",
+      "notes": "Support: Provide a simplified planning sheet with required features and examples. Extension: Students design multiple facial expressions or theme variations before choosing one.",
       "codeOrgActivities": [
-        "Game Lab online levels",
-        "Introduction to Sprites (video)"
-      ],
-      "literacyStrategy": {
-        "name": "Frayer Model",
-        "note": "Frayer Model for 'Sprite' contrasting it with a plain shape drawn by rect() or ellipse()."
-      }
+        "Robot Face Planning",
+        "Problem Solving with Programming",
+        "Robot Faces Rubric"
+      ]
     },
     {
       "number": 2,
       "duration": "~50-60 min",
-      "title": "Code.org 3b Lesson 9: Sprite Properties",
-      "objective": "Use dot notation to change sprite properties such as position, scale and rotation.",
+      "title": "Code.org 3b Lesson 7: Robot Faces (Part 2: Try and Reflect)",
+      "objective": "Build, test, debug and reflect on a programmed robot face.",
       "vocabulary": [
         {
-          "term": "Property",
-          "definition": "A label for a characteristic of a sprite, such as its location and appearance."
+          "term": "Iterate",
+          "definition": "To improve something through repeated rounds of testing and changing it."
         },
         {
-          "term": "Dot Notation",
-          "definition": "The way to use a sprite's properties in Game Lab: the sprite's name, a dot, then the property (cat.x)."
-        },
-        {
-          "term": "Scale",
-          "definition": "A sprite property that makes it bigger or smaller (1 is normal size)."
-        },
-        {
-          "term": "Rotation",
-          "definition": "A sprite property that turns it by a number of degrees."
+          "term": "Reflect",
+          "definition": "Thinking back on what worked, what didn't, and what to do next."
         }
       ],
-      "warmup": "Show one sprite in three different sizes and angles: 'What changed, and what stayed the same?'",
+      "warmup": "Check your plan: which part will you build first?",
       "main": [
-        "Introduce properties and dot notation: cat.x, cat.y, cat.scale, cat.rotation.",
-        "Predict, then test changes to each property.",
-        "Students adjust sprite properties, test visual changes, and create a scene that communicates a setting or mood.",
-        "Save a screenshot for the portfolio."
+        "Step 3 Try: build the robot face in Game Lab from the plan.",
+        "Test against the rubric: sequence, at least four shape types, variables with randomNumber().",
+        "Gallery walk: view classmates' robot faces.",
+        "Step 4 Reflect: write a short reflection and take a screenshot."
       ],
-      "code": "cat.scale = 0.5;\ncat.rotation = 20;\ncat.x = 100;",
-      "task": "Students adjust sprite properties, test visual changes, and create a scene that communicates a setting or mood.",
+      "code": null,
+      "task": "Students build their robot face, test required features, make revisions, and complete a short reflection with a screenshot.",
       "successChecklist": [
-        "I changed at least three sprite properties.",
-        "The changes make my scene clearer."
+        "My robot face uses shapes, variables and randomness.",
+        "I can explain how I improved it."
       ],
-      "exitTicket": "Code check: students correctly modify at least three sprite properties.",
-      "notes": "Support: Provide a property table with examples and expected outputs. Extension: Students use variables to control selected sprite properties. Reinforce saving and screenshot evidence for portfolio.",
+      "exitTicket": "Summative: submit the Robot Faces program link, screenshot and reflection via Toddle.",
+      "notes": "Support: Use a checklist of minimum required code features; allow students to work from their plan. Extension: Students add randomized features or explain how variables made their code more efficient. Do not begin sprites until the mini-project is completed and reflected on.",
       "codeOrgActivities": [
-        "Game Lab online levels",
-        "Sprite Properties (video)"
+        "Robot Faces Rubric",
+        "Game Lab"
       ]
     }
   ],
-  "planChangeNote": "Plan v2: switched from the Design Process unit to Code.org Unit 3b Interactive Animations and Games (students found the worksheet-heavy unit boring)."
+  "planChangeNote": "Week 9 was not taught (MAP testing), so from Week 10 every lesson moved one week later. Code.org 3b Lessons 10-11 (Text, Captioned Scenes) no longer fit before exams."
 });

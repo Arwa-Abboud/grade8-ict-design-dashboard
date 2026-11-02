@@ -1,100 +1,80 @@
-// Week 13: Nov 23 – Nov 27: Interactive Animations and Games (Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 10: Text; Lesson 11: Mini-Project - Captioned Scenes (part 1))
+// Week 13: Nov 23 – Nov 27: Interactive Animations and Games (Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 8: Sprites)
 G8_WEEKS.push({
   "week": 13,
   "dates": "Nov 23 – Nov 27",
   "status": "content",
   "topic": "Interactive Animations and Games",
-  "essentialQuestion": "How can text improve communication in a digital scene? How can we plan a scene that combines shapes, sprites and text?",
-  "standards": "CS.MS.2.2, CS.MS.3.1, CS.MS.3.3: CS.MS.2.2: The way that users interact with devices can provide useful information for improving the design. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing strategies for project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems.",
-  "lessonMapping": "Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 10: Text; Lesson 11: Mini-Project - Captioned Scenes (part 1)",
-  "evidenceOutcomes": "CS.MS.2.2 Evidence Outcomes - Students Can: a. Recommend improvements to the design of computing devices, based on an analysis of how users interact with the devices; c. Discuss issues of bias and accessibility in the design of existing technologies. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug; c. Seek and incorporate feedback from team members and users to refine a solution that meets user needs. CS.MS.3.3 Evidence Outcomes - Students Can: c. Systematically test and refine programs using a range of test cases.",
-  "walt": "We are learning to add readable text to a programmed scene for a clear audience and purpose. We are learning to plan a captioned scene using the problem-solving process.",
+  "essentialQuestion": "How do sprites help programmers manage more complex images and animations?",
+  "standards": "CS.MS.1.1, CS.MS.3.1, CS.MS.3.3: CS.MS.1.1: Complex problems can be broken into smaller parts to facilitate program implementation and review processes. CS.MS.3.1: Collaborative development of computational artifacts can be made more efficient by employing strategies for project management, crowdsourcing, and feedback. CS.MS.3.3: Programs can combine control structures, including nested loops and compound conditionals, to solve complex problems.",
+  "lessonMapping": "Code.org CSD 2026 Unit 3b (Interactive Animations and Games), Lesson 8: Sprites",
+  "evidenceOutcomes": "CS.MS.1.1 Evidence Outcomes - Students Can: a. Decompose problems and subproblems into parts to facilitate the design, implementation, and review of programs. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases. CS.MS.3.1 Evidence Outcomes - Students Can: b. Document programs in order to make them easier to follow, test, and debug. CS.MS.3.3 Evidence Outcomes - Students Can: a. Design and iteratively develop programs that combine control structures, including nested loops and compound conditionals; c. Systematically test and refine programs using a range of test cases.",
+  "walt": "We are learning to create sprites and assign images in Game Lab.",
   "wilf": [
-    "I can add text with appropriate placement, size, and contrast so the audience can understand my scene.",
-    "I can plan a scene with shapes, sprites and text, and start building it."
+    "I can create sprites, name them clearly, assign images, and place them on the screen."
   ],
   "keyConcepts": [
-    "Text",
-    "Readability",
-    "Contrast",
-    "Captions",
-    "Project planning"
+    "Sprites",
+    "Animation tab",
+    "Scene building"
   ],
-  "crossCurricular": "English: concise wording and captions; Art: contrast and visual hierarchy.",
-  "resources": "Code.org activities: Code.org 3b Lesson 10: Game Lab online levels; Code.org 3b Lesson 11: Sprite Scene Planning, Captioned Scenes Rubric, Problem Solving with Programming; Code.org lesson slides",
-  "formative": "Peer review: text is readable, purposeful, and supports the scene. (Lesson 1)",
+  "crossCurricular": "Art: digital imagery and visual storytelling; Math: position and scale. Math: transformations and scale; Art: mood, composition, and layout.",
+  "resources": "Code.org activities: Code.org 3b Lesson 8: Game Lab online levels, Introduction to Sprites (video); Code.org lesson slides",
+  "formative": "Teacher check: at least two correctly named sprites with images and positions. (Lesson 1)",
   "summative": null,
   "lessons": [
     {
       "number": 1,
       "duration": "~50-60 min",
-      "title": "Code.org 3b Lesson 10: Text",
-      "objective": "Add readable text to a programmed scene for a clear audience and purpose.",
+      "title": "Code.org 3b Lesson 8: Sprites",
+      "objective": "Create sprites, name them clearly, assign images and place them on the screen.",
       "vocabulary": [
         {
-          "term": "Text",
-          "definition": "Words drawn on the screen with the text() command."
+          "term": "Sprite",
+          "definition": "A character on the screen with properties that describe its location, movement and look."
         },
         {
-          "term": "Readability",
-          "definition": "How easy text is to read: size, color contrast and placement."
+          "term": "Animation Tab",
+          "definition": "The part of Game Lab where you choose or draw the images for sprites."
         }
       ],
-      "warmup": "Journal: think of a sign or caption that was hard to read. What made it hard?",
+      "warmup": "'How much information would a program need to remember to draw a character?'",
       "main": [
-        "Introduce text(), textSize() and placing text with coordinates.",
-        "Explore contrast and size for readability.",
-        "Students add text to a scene, test readability, and peer review whether the message is clear for the intended audience.",
-        "Journal: who is the audience for your text?"
+        "Introduce sprites as one variable that holds everything about a character.",
+        "Use createSprite(), setAnimation() and drawSprites(); explore the Animation tab.",
+        "Students create and name sprites, assign images, position them on the canvas, and compare sprites with shape commands.",
+        "Journal: why is a sprite easier than lots of separate shapes?"
       ],
-      "code": "textSize(24);\nfill(\"white\");\ntext(\"Welcome to the jungle!\", 60, 50);",
-      "task": "Students add text to a scene, test readability, and peer review whether the message is clear for the intended audience.",
+      "code": "var cat = createSprite(200, 200);\ncat.setAnimation(\"cat\");\ndrawSprites();",
+      "task": "Students create and name sprites, assign images, position them on the canvas, and compare sprites with shape commands.",
       "successChecklist": [
-        "My text is readable: size, contrast and placement.",
-        "My text supports the scene."
+        "I created at least two clearly named sprites.",
+        "Each sprite has an image and a position."
       ],
-      "exitTicket": "Peer review: text is readable, purposeful, and supports the scene.",
-      "notes": "Support: Provide sentence starters and text placement examples. Extension: Students create alternate text versions for different audiences or purposes.",
+      "exitTicket": "Teacher check: at least two correctly named sprites with images and positions.",
+      "notes": "Support: Provide a sprite setup checklist and model sprite naming conventions. Extension: Students create a themed scene with several sprites and explain why sprites are useful. This is a full new concept. Avoid combining with sprite properties.",
       "codeOrgActivities": [
-        "Game Lab online levels"
+        "Game Lab online levels",
+        "Introduction to Sprites (video)"
       ],
       "literacyStrategy": {
-        "name": "Accountable Talk",
-        "note": "Peer review of readability with stems: 'I can/can't read... because...', 'Try moving it...'."
+        "name": "Frayer Model",
+        "note": "Frayer Model for 'Sprite' contrasting it with a plain shape drawn by rect() or ellipse()."
       }
     },
     {
       "number": 2,
-      "duration": "~50-60 min",
-      "title": "Code.org 3b Lesson 11: Captioned Scenes (Part 1: Define, Prepare, Try)",
-      "objective": "Plan a captioned scene using shapes, sprites and text, then start building it.",
-      "vocabulary": [
-        {
-          "term": "Caption",
-          "definition": "A short line of text that explains or adds to a picture."
-        }
-      ],
-      "warmup": "Quick review: shapes, variables, randomNumber(), sprites, properties and text.",
-      "main": [
-        "Introduce the Captioned Scenes mini-project and its rubric.",
-        "Step 1 Define: describe the scene and its message.",
-        "Step 2 Prepare: complete the Sprite Scene Planning guide (sprites, shapes, text, positions).",
-        "Step 3 Try: start building the scene in Game Lab."
-      ],
+      "duration": "-",
+      "title": "No lesson: National Day celebrations",
+      "objective": "No Grade 8 lesson this week (National Day celebrations).",
+      "vocabulary": [],
+      "warmup": null,
+      "main": [],
       "code": null,
-      "task": "Plan a captioned scene on the Sprite Scene Planning guide and start building it.",
-      "successChecklist": [
-        "My plan lists the sprites, shapes and text I will use.",
-        "I have started building my scene from the plan."
-      ],
-      "exitTicket": "'Which part of your scene will be hardest to build, and why?'",
-      "notes": "Support: Provide a minimum requirement checklist and allow students to revise an existing project instead of starting again. Extension: Students add a user-focused design note, accessibility improvement, or extra randomized/sprite feature. Uses Code.org's Captioned Scenes mini-project in place of the spreadsheet's Creative Scene consolidation.",
-      "codeOrgActivities": [
-        "Sprite Scene Planning",
-        "Captioned Scenes Rubric",
-        "Problem Solving with Programming"
-      ]
+      "task": null,
+      "successChecklist": [],
+      "exitTicket": null,
+      "notes": null
     }
   ],
-  "planChangeNote": "Plan v2: switched from the Design Process unit to Code.org Unit 3b Interactive Animations and Games (students found the worksheet-heavy unit boring)."
+  "planChangeNote": "Week 9 was not taught (MAP testing), so from Week 10 every lesson moved one week later. Code.org 3b Lessons 10-11 (Text, Captioned Scenes) no longer fit before exams."
 });
