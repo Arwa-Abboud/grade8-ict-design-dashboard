@@ -180,7 +180,7 @@ var RUBRICS = {
       ]
     },
     {
-      "week": "13",
+      "week": "14",
       "title": "Sprites Setup Check",
       "points": 10,
       "categories": [
@@ -193,23 +193,6 @@ var RUBRICS = {
           "name": "Clear names",
           "points": 5,
           "description": "Sprite names describe what each sprite is (e.g. cat, sun), not sprite1."
-        }
-      ]
-    },
-    {
-      "week": "14",
-      "title": "Sprite Properties",
-      "points": 10,
-      "categories": [
-        {
-          "name": "Properties changed",
-          "points": 5,
-          "description": "At least three sprite properties are changed to improve the scene."
-        },
-        {
-          "name": "Purposeful changes",
-          "points": 5,
-          "description": "The student explains how each property change improves the scene."
         }
       ]
     }

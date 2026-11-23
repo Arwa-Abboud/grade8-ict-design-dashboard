@@ -106,5 +106,5 @@ G8_WEEKS.push({
       }
     }
   ],
-  "planChangeNote": "Week 9 was not taught (MAP testing), so from Week 10 every lesson moved one week later. Code.org 3b Lessons 10-11 (Text, Captioned Scenes) no longer fit before exams."
+  "planChangeNote": "Week 9 was not taught (MAP testing), so from Week 10 every lesson moved one week later. Week 12's plan (Robot Faces) was taught in Week 13, so Lessons 7-8 moved one more week. Code.org 3b Lessons 9-11 (Sprite Properties, Text, Captioned Scenes) no longer fit before exams."
 });
