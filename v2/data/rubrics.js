@@ -1,69 +1,49 @@
 // Grade 8 ICT/Design: Term 1 marks plan, rubrics and scoring guides.
-// Recorded marks (100 total): 3 formatives x 10 (Design Process) + Summative 1 (50, lesson completion)
-// + Summative 2 (20, Robot Faces). Plain, skills-based language; easy to edit later.
+// Recorded marks (100 total): 3 formatives x 10 (Design Process) + Summative 1 (50, Code.org 3b Lessons 1-6)
+// + Summative 2 (20, Robot Faces). Every rubric has 3 criteria. Plain language; easy to edit later.
 var RUBRICS = {
   overview: [
     { "code": "F1", "type": "Formative", "title": "Define and Prepare: Focus Need and Design Criteria", "week": "4", "points": 10 },
     { "code": "F2", "type": "Formative", "title": "Paper Prototype User Testing", "week": "5", "points": 10 },
     { "code": "F3", "type": "Formative", "title": "Feedback, Improved Screen and User Needs", "week": "6", "points": 10 },
-    { "code": "S1", "type": "Summative", "title": "Interactive Animations: Lesson Completion (Code.org 3b Lessons 1-6 and 8)", "week": "8-14", "points": 50 },
+    { "code": "S1", "type": "Summative", "title": "Interactive Animations: Lesson Completion (Code.org 3b Lessons 1-6)", "week": "8-11", "points": 50 },
     { "code": "S2", "type": "Summative", "title": "Robot Faces Mini-Project (Code.org 3b Lesson 7)", "week": "13", "points": 20 }
   ],
   summatives: [
     {
       "code": "S1",
       "title": "Summative 1: Interactive Animations Lesson Completion",
-      "subtitle": "50 points. Code.org CSD 3b Lessons 1-6 and 8, checked on Code.org progress and the printed activity guides. Final mark entered after Lesson 8 (Week 14).",
+      "subtitle": "50 points. Code.org CSD 3b Lessons 1-6, checked on Code.org progress and the printed activity guides.",
       "points": 50,
       "categories": [
         {
           "name": "Lessons 1-2: Programming for a Purpose and Plotting Shapes",
-          "points": 10,
+          "points": 15,
           "levels": [
-            { "label": "Exceeds Expectations", "range": "10", "description": "Animation and Game Design for Users guide and Drawing Shapes worksheet fully complete and accurate; every level done." },
-            { "label": "Meets Expectations", "range": "7-9", "description": "Both activities and all required levels complete, with minor gaps." },
-            { "label": "Approaching Expectations", "range": "4-6", "description": "About half of the activities and levels complete." },
-            { "label": "Beginning", "range": "0-3", "description": "Little or no work started." }
+            { "label": "Exceeds Expectations", "range": "14-15", "description": "Everything complete and accurate." },
+            { "label": "Meets Expectations", "range": "10-13", "description": "Most of it complete." },
+            { "label": "Approaching Expectations", "range": "5-9", "description": "About half complete." },
+            { "label": "Beginning", "range": "0-4", "description": "Little or nothing complete." }
           ]
         },
         {
           "name": "Lessons 3-4: Drawing in Game Lab and Shapes and Parameters",
-          "points": 10,
+          "points": 15,
           "levels": [
-            { "label": "Exceeds Expectations", "range": "10", "description": "Every Game Lab level complete, including the challenge levels." },
-            { "label": "Meets Expectations", "range": "7-9", "description": "All required levels complete; challenge levels may be skipped." },
-            { "label": "Approaching Expectations", "range": "4-6", "description": "About half of the required levels complete." },
-            { "label": "Beginning", "range": "0-3", "description": "Little or no work started." }
+            { "label": "Exceeds Expectations", "range": "14-15", "description": "Every level complete." },
+            { "label": "Meets Expectations", "range": "10-13", "description": "Most levels complete." },
+            { "label": "Approaching Expectations", "range": "5-9", "description": "About half complete." },
+            { "label": "Beginning", "range": "0-4", "description": "Little or nothing complete." }
           ]
         },
         {
           "name": "Lessons 5-6: Variables and Random Numbers",
-          "points": 10,
+          "points": 20,
           "levels": [
-            { "label": "Exceeds Expectations", "range": "10", "description": "Every level complete, including the challenge levels." },
-            { "label": "Meets Expectations", "range": "7-9", "description": "All required levels complete; challenge levels may be skipped." },
-            { "label": "Approaching Expectations", "range": "4-6", "description": "About half of the required levels complete." },
-            { "label": "Beginning", "range": "0-3", "description": "Little or no work started." }
-          ]
-        },
-        {
-          "name": "Lesson 8: Sprites",
-          "points": 10,
-          "levels": [
-            { "label": "Exceeds Expectations", "range": "10", "description": "Every level complete, including the challenge levels." },
-            { "label": "Meets Expectations", "range": "7-9", "description": "All required levels complete; challenge levels may be skipped." },
-            { "label": "Approaching Expectations", "range": "4-6", "description": "About half of the required levels complete." },
-            { "label": "Beginning", "range": "0-3", "description": "Little or no work started." }
-          ]
-        },
-        {
-          "name": "Check Your Understanding questions (all lessons)",
-          "points": 10,
-          "levels": [
-            { "label": "Exceeds Expectations", "range": "10", "description": "Every end-of-lesson question answered, with clear and correct explanations." },
-            { "label": "Meets Expectations", "range": "7-9", "description": "Every question answered; most answers correct." },
-            { "label": "Approaching Expectations", "range": "4-6", "description": "Some questions answered, or answers are very brief." },
-            { "label": "Beginning", "range": "0-3", "description": "Few or no questions answered." }
+            { "label": "Exceeds Expectations", "range": "18-20", "description": "Every level complete." },
+            { "label": "Meets Expectations", "range": "13-17", "description": "Most levels complete." },
+            { "label": "Approaching Expectations", "range": "7-12", "description": "About half complete." },
+            { "label": "Beginning", "range": "0-6", "description": "Little or nothing complete." }
           ]
         }
       ]
@@ -71,57 +51,37 @@ var RUBRICS = {
     {
       "code": "S2",
       "title": "Summative 2: Robot Faces Mini-Project",
-      "subtitle": "20 points. Code.org CSD 3b Lesson 7, Week 13. Based on the Code.org Robot Faces rubric. Program link, screenshot and reflection submitted via Toddle.",
+      "subtitle": "20 points. Code.org CSD 3b Lesson 7, Week 13. Program link, screenshot and reflection submitted via Toddle.",
       "points": 20,
       "categories": [
         {
-          "name": "Program Sequence",
-          "points": 3,
+          "name": "Shapes and Sequence",
+          "points": 7,
           "levels": [
-            { "label": "Exceeds Expectations", "range": "3", "description": "Code is in the right order and every shape appears exactly as planned." },
-            { "label": "Meets Expectations", "range": "2", "description": "A few shapes are hidden behind others by mistake, but the face is clear." },
-            { "label": "Approaching Expectations", "range": "1", "description": "Many shapes are hidden or overlapping because of the order of the code." },
-            { "label": "Beginning", "range": "0", "description": "The order of the code is so wrong the output does not look like the planned face." }
-          ]
-        },
-        {
-          "name": "Shapes and Coordinates",
-          "points": 5,
-          "levels": [
-            { "label": "Exceeds Expectations", "range": "5", "description": "Uses at least four different types of shape, each placed on purpose using the coordinate grid." },
-            { "label": "Meets Expectations", "range": "4", "description": "Uses at least three types of shape, placed using the coordinate grid." },
-            { "label": "Approaching Expectations", "range": "2-3", "description": "Uses one or two types of shape, or places them with default values." },
-            { "label": "Beginning", "range": "0-1", "description": "No shapes, or shapes not placed using coordinates." }
+            { "label": "Exceeds Expectations", "range": "7", "description": "4+ shape types, placed with coordinates, in the right order." },
+            { "label": "Meets Expectations", "range": "5-6", "description": "3 shape types; the face is clear." },
+            { "label": "Approaching Expectations", "range": "3-4", "description": "1-2 shape types, or shapes hidden by the order." },
+            { "label": "Beginning", "range": "0-2", "description": "Few or no shapes." }
           ]
         },
         {
           "name": "Variables and Randomness",
-          "points": 6,
+          "points": 8,
           "levels": [
-            { "label": "Exceeds Expectations", "range": "6", "description": "At least four variables with clear names, used correctly; randomNumber() makes the face look different each run." },
-            { "label": "Meets Expectations", "range": "4-5", "description": "At least three clearly named variables; at least two use randomNumber()." },
-            { "label": "Approaching Expectations", "range": "2-3", "description": "At least one variable, or randomness used once." },
-            { "label": "Beginning", "range": "0-1", "description": "No variables or random numbers." }
+            { "label": "Exceeds Expectations", "range": "8", "description": "4+ clearly named variables; randomNumber() changes the face each run." },
+            { "label": "Meets Expectations", "range": "6-7", "description": "3 variables; at least 2 use randomNumber()." },
+            { "label": "Approaching Expectations", "range": "3-5", "description": "1 variable, or randomness used once." },
+            { "label": "Beginning", "range": "0-2", "description": "No variables or randomness." }
           ]
         },
         {
-          "name": "Planning and Digital Artifact",
-          "points": 3,
+          "name": "Plan and Reflection",
+          "points": 5,
           "levels": [
-            { "label": "Exceeds Expectations", "range": "3", "description": "The planning guide is complete and the program clearly shows the planned robot face." },
-            { "label": "Meets Expectations", "range": "2", "description": "The planning guide is mostly complete and the face generally matches the plan." },
-            { "label": "Approaching Expectations", "range": "1", "description": "Some of the plan is used in the program." },
-            { "label": "Beginning", "range": "0", "description": "No planning guide, or it does not match the program." }
-          ]
-        },
-        {
-          "name": "Reflection",
-          "points": 3,
-          "levels": [
-            { "label": "Exceeds Expectations", "range": "3", "description": "Explains clearly how testing and feedback improved the robot face, with a specific example." },
-            { "label": "Meets Expectations", "range": "2", "description": "Explains at least one improvement made after testing." },
-            { "label": "Approaching Expectations", "range": "1", "description": "Reflection is general, with no specific change described." },
-            { "label": "Beginning", "range": "0", "description": "No reflection submitted." }
+            { "label": "Exceeds Expectations", "range": "5", "description": "Complete plan; reflection gives a specific improvement." },
+            { "label": "Meets Expectations", "range": "4", "description": "Plan mostly complete; one improvement explained." },
+            { "label": "Approaching Expectations", "range": "2-3", "description": "Plan partly used; reflection is general." },
+            { "label": "Beginning", "range": "0-1", "description": "No plan or no reflection." }
           ]
         }
       ]
@@ -135,16 +95,9 @@ var RUBRICS = {
       "evidence": "Brainstorming User Needs Recording Sheet (Lesson 1) and Selecting a Focus Need Planning Sheet (Lesson 2).",
       "points": 10,
       "categories": [
-        {
-          "name": "User needs and focus need",
-          "points": 5,
-          "description": "Several user needs are recorded from the user's point of view, and the selected focus need is specific and clearly stated, not vague."
-        },
-        {
-          "name": "Design criteria",
-          "points": 5,
-          "description": "Criteria are linked to the focus need and specific enough to actually check a solution against."
-        }
+        { "name": "User needs", "points": 3, "description": "Several needs written from the user's point of view." },
+        { "name": "Focus need", "points": 3, "description": "One clear, specific need is chosen." },
+        { "name": "Design criteria", "points": 4, "description": "Criteria link to the focus need and can be checked." }
       ]
     },
     {
@@ -154,16 +107,9 @@ var RUBRICS = {
       "evidence": "Paper prototype and user test notes from Lesson 5 (Parts 1 and 2).",
       "points": 10,
       "categories": [
-        {
-          "name": "Specific observations",
-          "points": 5,
-          "description": "Notes describe what the user actually did or said, linked to a screen or part of the prototype."
-        },
-        {
-          "name": "Improvement suggestion",
-          "points": 5,
-          "description": "The suggested change is backed by an observation from the test."
-        }
+        { "name": "Prototype", "points": 3, "description": "The paper prototype is complete and easy to test." },
+        { "name": "Test notes", "points": 4, "description": "Notes say what the user actually did or said." },
+        { "name": "Improvement", "points": 3, "description": "One change is suggested, based on the test." }
       ]
     },
     {
@@ -173,16 +119,9 @@ var RUBRICS = {
       "evidence": "Code.org Lesson 6 Prototype Feedback and Improve a Screen; Code.org Lesson 7 User Interviews.",
       "points": 10,
       "categories": [
-        {
-          "name": "Feedback and improved screen",
-          "points": 5,
-          "description": "Feedback is sorted into clear categories and the improved screen responds to at least one of them."
-        },
-        {
-          "name": "Need statements",
-          "points": 5,
-          "description": "Need statements are backed by specific evidence from the user interviews."
-        }
+        { "name": "Feedback", "points": 3, "description": "Feedback is sorted into clear groups." },
+        { "name": "Improved screen", "points": 4, "description": "The new screen fixes at least one piece of feedback." },
+        { "name": "Need statements", "points": 3, "description": "Needs are backed by evidence from the interviews." }
       ]
     }
   ],

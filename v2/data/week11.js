@@ -23,7 +23,7 @@ G8_WEEKS.push({
   "crossCurricular": "Math: algebraic thinking; English: clear naming and explanation. Math: probability and number ranges; Science: repeated trials and observation.",
   "resources": "Code.org activities: Code.org 3b Lesson 5: Game Lab online levels, Variables (reference); Code.org 3b Lesson 6: Game Lab online levels, Random Numbers (reference); Code.org lesson slides",
   "formative": "Teacher check: program uses randomNumber() correctly and student explains the range. (Lesson 2)",
-  "summative": null,
+  "summative": "Summative 1 (50 pts): Interactive Animations lesson completion (Code.org 3b Lessons 1-6), entered after Lesson 6",
   "lessons": [
     {
       "number": 1,
