@@ -246,6 +246,7 @@
 
   function formativePlainText(f) {
     var lines = ["WEEK " + f.week + " FORMATIVE — " + f.title + " (" + f.points + " pts)"];
+    if (f.evidence) lines.push("Evidence: " + f.evidence);
     lines.push("");
     f.categories.forEach(function (c) {
       lines.push("- " + c.name + " (" + c.points + " pts): " + c.description);
@@ -267,41 +268,73 @@
   function showRubrics() {
     setActive("nav-rubrics");
 
-    if (!RUBRICS.summative || !RUBRICS.summative.categories || !RUBRICS.summative.categories.length) {
+    var sums = RUBRICS.summatives || (RUBRICS.summative ? [RUBRICS.summative] : []);
+    if (!sums.length) {
       content.innerHTML = "<div class=\"week-header\"><span class=\"week-badge\">Rubrics</span><h2>Not built yet</h2><p style=\"margin:0;color:var(--muted);\">Rubrics will be added once we reach the relevant assessment weeks.</p></div>";
       window.scrollTo(0, 0);
       return;
     }
 
-    var r = RUBRICS.summative;
-
     var html = "<div class=\"week-header\">" +
-      "<span class=\"week-badge\">Summative Rubric</span>" +
-      "<h2>" + esc(r.title) + "</h2>" +
-      "<p style=\"margin:0;color:var(--muted);font-size:13.5px;\">" + esc(r.subtitle) + "</p>" +
-      "</div>" +
-      "<div class=\"rubric-card\">" + rubricCategoryTable(r.categories, true) +
-      "<button class=\"copy-btn\" id=\"copy-summative-rubric\">Copy for Toddle</button></div>";
+      "<span class=\"week-badge\">Marks Plan</span>" +
+      "<h2>Term 1 Recorded Marks</h2>" +
+      "<p style=\"margin:0;color:var(--muted);font-size:13.5px;\">3 formatives from the Design Process and 2 summatives from Interactive Animations and Games.</p>" +
+      "</div>";
 
-    if (RUBRICS.formatives && RUBRICS.formatives.length) {
-      html += "<h3 class=\"rubric-section-title\">Formative Scoring Guides</h3>";
-      html += RUBRICS.formatives.map(function (f, idx) {
-        return "<details class=\"lesson-card\"" + (idx === 0 ? " open" : "") + ">" +
-          "<summary><span class=\"lesson-tag\">Week " + esc(f.week) + "</span><span class=\"lesson-title-text\">" + esc(f.title) + "</span><span class=\"lesson-duration\">" + f.points + " pts</span><span class=\"chevron\">&#9656;</span></summary>" +
-          "<div class=\"lesson-body\">" + rubricCategoryTable(f.categories, false) +
-          "<button class=\"copy-btn\" data-formative-idx=\"" + idx + "\">Copy for Toddle</button></div>" +
+    if (RUBRICS.overview && RUBRICS.overview.length) {
+      var total = 0;
+      var rows = RUBRICS.overview.map(function (o) {
+        total += o.points;
+        return "<tr><td><strong>" + esc(o.code) + "</strong></td><td>" + esc(o.type) + "</td><td>" + esc(o.title) +
+          "</td><td>Week " + esc(o.week) + "</td><td class=\"rubric-points-cell\">" + o.points + " pts</td></tr>";
+      }).join("");
+      html += "<div class=\"rubric-card\"><table class=\"rubric-table simple\"><thead><tr><th>Code</th><th>Type</th><th>Assessment</th><th>When</th><th>Out of</th></tr></thead><tbody>" +
+        rows + "<tr><td></td><td></td><td><strong>Total</strong></td><td></td><td class=\"rubric-points-cell\"><strong>" + total + " pts</strong></td></tr></tbody></table></div>";
+    }
+
+    html += "<h3 class=\"rubric-section-title\">Summative Rubrics</h3>";
+    html += sums.map(function (r, idx) {
+      return "<details class=\"lesson-card\" open>" +
+        "<summary><span class=\"lesson-tag\">" + esc(r.code || "Summative") + "</span><span class=\"lesson-title-text\">" + esc(r.title) + "</span><span class=\"lesson-duration\">" + r.points + " pts</span><span class=\"chevron\">&#9656;</span></summary>" +
+        "<div class=\"lesson-body\"><p style=\"margin:0 0 10px;color:var(--muted);font-size:13.5px;\">" + esc(r.subtitle) + "</p>" +
+        rubricCategoryTable(r.categories, true) +
+        "<button class=\"copy-btn\" data-summative-idx=\"" + idx + "\">Copy for Toddle</button></div>" +
+        "</details>";
+    }).join("");
+
+    function guides(list, attr, tagFn) {
+      return list.map(function (f, idx) {
+        return "<details class=\"lesson-card\"" + (attr === "data-formative-idx" && idx === 0 ? " open" : "") + ">" +
+          "<summary><span class=\"lesson-tag\">" + esc(tagFn(f)) + "</span><span class=\"lesson-title-text\">" + esc(f.title) + "</span><span class=\"lesson-duration\">" + f.points + " pts</span><span class=\"chevron\">&#9656;</span></summary>" +
+          "<div class=\"lesson-body\">" + (f.evidence ? "<p style=\"margin:0 0 10px;\"><strong>Evidence:</strong> " + esc(f.evidence) + "</p>" : "") +
+          rubricCategoryTable(f.categories, false) +
+          "<button class=\"copy-btn\" " + attr + "=\"" + idx + "\">Copy for Toddle</button></div>" +
           "</details>";
       }).join("");
     }
 
+    if (RUBRICS.formatives && RUBRICS.formatives.length) {
+      html += "<h3 class=\"rubric-section-title\">Formative Scoring Guides (recorded)</h3>";
+      html += guides(RUBRICS.formatives, "data-formative-idx", function (f) { return (f.code ? f.code + " - " : "") + "Week " + f.week; });
+    }
+    if (RUBRICS.checks && RUBRICS.checks.length) {
+      html += "<h3 class=\"rubric-section-title\">Informal Checks (feedback only, not recorded)</h3>";
+      html += guides(RUBRICS.checks, "data-check-idx", function (f) { return "Week " + f.week; });
+    }
+
     content.innerHTML = html;
 
-    var summativeBtn = document.getElementById("copy-summative-rubric");
-    if (summativeBtn) attachCopyHandler(summativeBtn, function () { return summativePlainText(r); });
-
+    content.querySelectorAll("[data-summative-idx]").forEach(function (btn) {
+      var idx = parseInt(btn.getAttribute("data-summative-idx"), 10);
+      attachCopyHandler(btn, function () { return summativePlainText(sums[idx]); });
+    });
     content.querySelectorAll("[data-formative-idx]").forEach(function (btn) {
       var idx = parseInt(btn.getAttribute("data-formative-idx"), 10);
       attachCopyHandler(btn, function () { return formativePlainText(RUBRICS.formatives[idx]); });
+    });
+    content.querySelectorAll("[data-check-idx]").forEach(function (btn) {
+      var idx = parseInt(btn.getAttribute("data-check-idx"), 10);
+      attachCopyHandler(btn, function () { return formativePlainText(RUBRICS.checks[idx]); });
     });
 
     window.scrollTo(0, 0);

@@ -20,7 +20,7 @@ G8_WEEKS.push({
   "crossCurricular": "Art: digital imagery and visual storytelling; Math: position and scale. Math: transformations and scale; Art: mood, composition, and layout.",
   "resources": "Code.org activities: Code.org 3b Lesson 8: Game Lab online levels, Introduction to Sprites (video); Code.org lesson slides",
   "formative": "Teacher check: at least two correctly named sprites with images and positions. (Lesson 1)",
-  "summative": null,
+  "summative": "Summative 1 (50 pts): Interactive Animations lesson completion (Code.org 3b Lessons 1-6 and 8), entered after Lesson 8",
   "lessons": [
     {
       "number": 1,

@@ -20,7 +20,7 @@ G8_WEEKS.push({
   ],
   "crossCurricular": "Art/Design: screen layout; English: precise observation notes.",
   "resources": "Code.org activities: Lesson 5: User Interface Screens, User Testing (Computer), User Testing (User); Code.org lesson slides",
-  "formative": "Paper prototype user test notes (Lesson 2)",
+  "formative": "Formative 2 (recorded, 10 pts): paper prototype user test notes (Lesson 2)",
   "summative": null,
   "lessons": [
     {

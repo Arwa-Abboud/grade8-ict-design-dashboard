@@ -13,7 +13,7 @@ G8_WEEKS.push({
   keyConcepts: ["Define", "Prepare", "Brainstorming", "Categorization", "Design criteria"],
   crossCurricular: "English: categorizing information; Design: ideation.",
   resources: "Code.org Lesson 3; sticky notes; poster paper; the 'smart clothing' design challenge",
-  formative: "Teacher checks need statements and criteria (Lesson 2)",
+  formative: "Formative 1 (recorded, 10 pts): need statements, focus need and design criteria (Lesson 2)",
   summative: null,
   lessons: [
     {

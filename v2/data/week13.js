@@ -24,7 +24,7 @@ G8_WEEKS.push({
   "crossCurricular": "Art: character design; English: planning and annotation. Art: creative expression; English: reflection writing.",
   "resources": "Code.org activities: Code.org 3b Lesson 7: Robot Face Planning, Problem Solving with Programming, Robot Faces Rubric; Code.org 3b Lesson 7: Robot Faces Rubric, Game Lab; Code.org lesson slides",
   "formative": null,
-  "summative": "Summative: Robot Faces mini-project (rubric scored this week, inside the Weeks 11-13 assessment window)",
+  "summative": "Summative 2 (20 pts): Robot Faces mini-project, scored on the Robot Faces rubric this week",
   "lessons": [
     {
       "number": 1,

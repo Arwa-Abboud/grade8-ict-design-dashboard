@@ -22,7 +22,7 @@ G8_WEEKS.push({
   ],
   "crossCurricular": "English: reading for evidence and categorizing; Design: UI critique.",
   "resources": "Code.org activities: Lesson 6: Prototype Feedback, Improve a Screen; Lesson 7: User Interviews; Code.org lesson slides",
-  "formative": "Improved screen linked to feedback, and need statements from interviews (Lesson 2)",
+  "formative": "Formative 3 (recorded, 10 pts): improved screen linked to feedback, and need statements from interviews (Lesson 2)",
   "summative": null,
   "lessons": [
     {
